@@ -100,28 +100,24 @@
 </script>
 <main class="flex-1">
 
-<section class="hero-band border-b border-outline">
-  <div class="mx-auto max-w-3xl px-4 pt-12 pb-10 text-center">
-    <p class="text-xs font-semibold uppercase tracking-widest text-primary-600">Free Dallas apartment search</p>
-    <h1 class="heading-font mt-3 text-3xl leading-tight tracking-tight text-on-surface sm:text-4xl">
-      Tell us your situation. We'll find Dallas communities that will consider it.</h1>
-    <p class="mx-auto mt-4 max-w-xl text-on-surface-variant">
-      Answer a few questions below and licensed Dallas locators will match you against screening criteria
-      we've already researched — then send you a custom apartment list, free.</p>
-    <div class="mt-6 flex flex-wrap justify-center gap-2"><span class="trust-chip"><svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>100% free to renters</span><span class="trust-chip"><svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Licensed apartment locators</span><span class="trust-chip"><svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Custom list in 24–48 hours</span><span class="trust-chip"><svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>No obligation</span></div>
+<section class="hero-band">
+  <div class="mx-auto max-w-2xl px-4 pt-5 pb-4 text-center sm:pt-9 sm:pb-6">
+    <h1 class="heading-font text-[26px] leading-[1.15] tracking-tight text-on-surface sm:text-4xl">
+      Get a Free List of Dallas Apartments That Fit Your Situation</h1>
+    <p class="mx-auto mt-2 max-w-xl text-[15px] leading-snug text-on-surface-variant sm:text-base">
+      Compare your best options by location, price, and current move-in specials —
+      your custom list in 24&ndash;48 hours.</p>
+    <p class="mt-2.5 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-[13px] font-medium text-on-surface-variant">
+      <span class="inline-flex items-center gap-1 text-on-surface"><svg width="13" height="13" style="flex-shrink:0;color:rgb(var(--lp-primary-600))" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>100% free</span>
+      <span class="inline-flex items-center gap-1 text-on-surface"><svg width="13" height="13" style="flex-shrink:0;color:rgb(var(--lp-primary-600))" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Licensed locators</span>
+      <span class="inline-flex items-center gap-1 text-on-surface"><svg width="13" height="13" style="flex-shrink:0;color:rgb(var(--lp-primary-600))" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Takes about 60 seconds</span>
+    </p>
   </div>
 </section>
 
 <section id="apartment-form" class="scroll-mt-24">
-  <div class="mx-auto max-w-2xl px-4 py-10">
-    <div class="form-card p-6 sm:p-8">
-      <h2 class="heading-font text-2xl text-on-surface">Get your free custom apartment list</h2>
-      <p class="mt-1 mb-5 text-sm text-on-surface-variant">Free. No obligation. Custom list in 48 hours.</p>
-      <div class="mb-5 rounded-btn border border-outline bg-surface-alt px-4 py-3 text-[13px] leading-relaxed text-on-surface-variant">
-        <strong class="block text-on-surface">100% free to renters.</strong>
-        We check your situation against research we have already done, confirm anything that looks stale,
-        and send a custom list. Your info stays between us and the communities you tour.
-      </div>
+  <div class="mx-auto max-w-2xl px-3 pb-8 sm:px-4 sm:pb-10">
+    <div class="form-card p-4 sm:p-8">
       <div class="apt-form">
 <form id="aptForm" method="POST" action="https://n8n.dentals.targetdial.co/webhook/NewWeb3" novalidate>
  <input type="hidden" name="referredBy" value="BROKER: Spirit Real Estate (TREC# 562021) REALTOR &amp; LOCATOR: the Dallas Second Chance Team MEMBER: NATIONAL ASSOCIATION OF APARTMENT LOCATORS. Upon client approval - you will be receiving the lease verification and invoice from Karla Robinson / Spirit Real Estate Group">
@@ -402,9 +398,11 @@
  </div>
 
  <div class="msg-error" id="formError"></div>
- <button type="submit" class="btn-submit" id="submitBtn">Get My Matches &gt;</button>
+ <button type="submit" class="btn-submit" id="submitBtn">Get My Free Apartment List &rarr;</button>
  </form>
       </div>
+      <p class="mt-3 text-center text-[13px] text-on-surface-variant">
+        No cost. No spam. Your info stays with our locating team.</p>
     </div>
   </div>
 </section>
@@ -412,17 +410,17 @@
 <section class="border-t border-outline bg-surface-container">
   <div class="mx-auto max-w-3xl px-4 py-12">
     <h2 class="heading-font text-2xl text-on-surface">How it works</h2>
-    <ol class="mt-6 space-y-6"><li class="flex gap-4"><span class="step-num">1</span><div><h3 class="heading-font text-lg text-on-surface">We review your situation</h3><p class="mt-1 text-sm text-on-surface-variant">Credit range, rental history, income, and area preferences. No judgment — we're building your profile so we can match accurately.</p></div></li><li class="flex gap-4"><span class="step-num">2</span><div><h3 class="heading-font text-lg text-on-surface">We match you against our research</h3><p class="mt-1 text-sm text-on-surface-variant">We check logged screening criteria and call properties directly if anything looks out of date. Not what the website says — what the leasing office actually approves right now.</p></div></li><li class="flex gap-4"><span class="step-num">3</span><div><h3 class="heading-font text-lg text-on-surface">You get a custom apartment list</h3><p class="mt-1 text-sm text-on-surface-variant">Within 24–48 hours on weekdays: a researched list of Dallas communities that fit your budget, timeline, and situation — with current pricing and any specials running.</p></div></li></ol>
+    <ol class="mt-6 space-y-6"><li class="flex gap-4"><span class="step-num">1</span><div><h3 class="heading-font text-lg text-on-surface">We review your situation</h3><p class="mt-1 text-sm text-on-surface-variant">Budget, timeline, credit, rental history. No judgment — it's how we match you accurately.</p></div></li><li class="flex gap-4"><span class="step-num">2</span><div><h3 class="heading-font text-lg text-on-surface">We verify with leasing offices</h3><p class="mt-1 text-sm text-on-surface-variant">We check what each community actually approves right now — not what its website says.</p></div></li><li class="flex gap-4"><span class="step-num">3</span><div><h3 class="heading-font text-lg text-on-surface">You get your free list</h3><p class="mt-1 text-sm text-on-surface-variant">Within 24–48 hours on weekdays: communities that fit you, with current pricing and move-in specials.</p></div></li></ol>
   </div>
 </section>
 <section class="border-t border-outline">
   <div class="mx-auto max-w-3xl px-4 py-12">
     <h2 class="heading-font text-2xl text-on-surface">Common questions</h2>
-    <dl class="mt-6 space-y-5 text-sm"><div><dt class="font-medium text-on-surface">How long until I hear back?</dt><dd class="mt-1 text-on-surface-variant">Most people get their custom list within 24–48 hours on weekdays. If you're moving soon, say so in the form — urgent timelines get prioritized.</dd></div><div><dt class="font-medium text-on-surface">Does it cost anything?</dt><dd class="mt-1 text-on-surface-variant">No. Filling out the form and getting your list costs you nothing — apartment locating is free to renters. The service is paid by the communities, never by you.</dd></div><div><dt class="font-medium text-on-surface">What should I include so the list actually helps?</dt><dd class="mt-1 text-on-surface-variant">Your budget range, the unit size you need, your ideal move-in date, and the areas of Dallas you're open to. The more honest you are about credit or rental history, the more accurate your matches.</dd></div><div><dt class="font-medium text-on-surface">Will I hear from more than one place?</dt><dd class="mt-1 text-on-surface-variant">You may be connected with one or more communities depending on what fits your budget, size, and timeline. We're matching you, not blasting your info to every leasing office in Dallas.</dd></div></dl>
-    <div class="mt-8 rounded-card border border-outline bg-surface-container p-5 text-center text-sm text-on-surface-variant">
-      Prefer to browse first? See rankings and reviews at
-      <a class="font-semibold text-primary-600 hover:underline" href="https://dallasapartmentreviews.com/">DallasApartmentReviews.com</a>
-      or <a class="font-semibold text-primary-600 hover:underline" href="tel:469-283-3766">call 469-283-3766</a>.
+    <dl class="mt-6 space-y-5 text-sm"><div><dt class="font-medium text-on-surface">Does it cost anything?</dt><dd class="mt-1 text-on-surface-variant">No. Apartment locating is free to renters — communities pay the service, never you.</dd></div><div><dt class="font-medium text-on-surface">How fast do I get my list?</dt><dd class="mt-1 text-on-surface-variant">Within 24–48 hours on weekdays. Moving urgently? Say so in the form — tight timelines get prioritized.</dd></div><div><dt class="font-medium text-on-surface">Why do you ask about credit and rental history?</dt><dd class="mt-1 text-on-surface-variant">The more honest your answers, the more accurate your list. We only include communities that actually approve situations like yours.</dd></div><div><dt class="font-medium text-on-surface">Who sees my info?</dt><dd class="mt-1 text-on-surface-variant">Our locating team, and only the communities you choose to tour. We match you — we don't blast your info to every leasing office in Dallas.</dd></div></dl>
+    <div class="mt-8 text-center">
+      <a href="#apartment-form" class="inline-block rounded-btn px-8 py-3.5 text-base font-bold shadow-card"
+         style="background:rgb(var(--lp-accent-500));color:rgb(var(--lp-on-accent))">Get My Free Apartment List &rarr;</a>
+      <p class="mt-2 text-[13px] text-on-surface-variant">Free &middot; no obligation &middot; takes about 60 seconds</p>
     </div>
   </div>
 </section>
