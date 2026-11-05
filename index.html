@@ -1,128 +1,32 @@
-<!doctype html>
-<html lang="en" data-preset="modern" data-base="light" data-hero="spotlight" data-header="solid" data-cards="registry" style="--lp-primary-50:244 249 253;--lp-primary-100:229 240 249;--lp-primary-200:200 223 242;--lp-primary-300:159 200 232;--lp-primary-400:104 169 218;--lp-primary-500:2 132 199;--lp-primary-600:0 111 169;--lp-primary-700:0 85 131;--lp-primary-800:0 76 119;--lp-primary-900:0 60 96;--lp-secondary-50:244 248 247;--lp-secondary-100:228 238 237;--lp-secondary-200:198 218 215;--lp-secondary-300:156 192 187;--lp-secondary-400:101 158 151;--lp-secondary-500:15 118 110;--lp-secondary-600:12 101 94;--lp-secondary-700:8 78 73;--lp-secondary-800:7 71 66;--lp-secondary-900:5 58 54;--lp-neutral-50:247 248 249;--lp-neutral-100:235 237 241;--lp-neutral-200:212 217 224;--lp-neutral-300:182 190 202;--lp-neutral-400:144 156 173;--lp-neutral-500:100 116 139;--lp-neutral-600:84 98 118;--lp-neutral-700:64 75 91;--lp-neutral-800:57 68 82;--lp-neutral-900:46 54 66;--lp-accent-50:255 250 245;--lp-accent-100:255 244 232;--lp-accent-200:254 231 205;--lp-accent-300:253 213 168;--lp-accent-400:250 189 115;--lp-accent-500:245 158 11;--lp-accent-600:205 130 0;--lp-accent-700:153 94 0;--lp-accent-800:137 82 0;--lp-accent-900:107 61 0;--lp-surface:246 250 253;--lp-surface-alt:238 245 251;--lp-surface-container:255 255 255;--lp-surface-container-high:241 245 249;--lp-on-surface:15 23 42;--lp-on-surface-variant:95 110 134;--lp-outline:226 232 240;--lp-outline-variant:241 245 249;--lp-accent:245 158 11;--lp-on-accent:0 0 0;--lp-brand:#0284c7;--lp-accent:#f59e0b;--lp-font:'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;--lp-font-heading:'Archivo', system-ui, sans-serif;--lp-heading-weight:800;--lp-heading-tracking:-0.01em;--lp-text-display-desktop:44px;--lp-text-display-mobile:32px;--lp-text-display-tracking:-0.02em;--lp-text-h1-desktop:36px;--lp-text-h1-mobile:28px;--lp-text-h1-tracking:-0.015em;--lp-text-h2-desktop:26px;--lp-text-h2-mobile:22px;--lp-text-h2-tracking:-0.01em;--lp-text-h3-desktop:21px;--lp-text-h3-mobile:19px;--lp-text-h3-tracking:0em;--lp-radius-sm:0.375rem;--lp-radius-md:0.625rem;--lp-radius-lg:0.875rem;--lp-radius-xl:1.25rem;--lp-radius-card:14px;--lp-radius-btn:10px;--lp-radius-chip:0.5rem;--lp-shadow-card:0 1px 3px rgb(15 23 42 / 0.08), 0 1px 2px rgb(15 23 42 / 0.04);--lp-shadow-hover:0 10px 28px rgb(15 23 42 / 0.12);--lp-card-border:1px solid transparent;--lp-ghost-border:1px solid transparent;--lp-ghost-bg:rgb(var(--lp-surface-alt));--lp-ghost-bg-hover:rgb(var(--lp-surface-container-high));--lp-link-decoration:none;--lp-link-underline-color:transparent;--lp-signature:none;">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Start Your Dallas Apartment Search | Dallas Apartment Reviews</title>
-<meta name="description" content="Tell us your budget, timeline, and situation and licensed Dallas apartment locators will send you a free custom apartment list within 48 hours.">
-<link rel="canonical" href="https://search.dallasapartmentreviews.com/">
-<link rel="icon" href="/images/favicon.png">
-<link rel="apple-touch-icon" href="/images/favicon.png">
-<meta name="theme-color" content="#f6fafd">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/site-a.css">
-<link rel="stylesheet" href="/css/site-b.css">
-<style>body{font-family:var(--lp-font)}</style>
-<style>
-/* Apartment search form — namespaced, tokens mapped to the site theme */
-.apt-form { --af-text: rgb(var(--lp-on-surface)); --af-muted: rgb(var(--lp-on-surface-variant));
-  --af-primary: rgb(var(--lp-primary-500)); --af-primary-dark: rgb(var(--lp-primary-600));
-  --af-border: rgb(var(--lp-outline)); --af-field-bg: rgb(var(--lp-surface));
-  --af-error: #dc2626; --af-radius: var(--lp-radius-md, .625rem); }
-.apt-form .field { margin-bottom: 18px; }
-.apt-form .field.hidden { display: none; }
-.apt-form label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 5px; color: var(--af-text); }
-.apt-form .req { color: var(--af-error); font-weight: 400; }
-.apt-form .field-desc { font-size: 12px; color: var(--af-muted); margin-top: 4px; line-height: 1.4; }
-.apt-form select, .apt-form input[type="text"], .apt-form input[type="email"], .apt-form input[type="tel"],
-.apt-form input[type="number"], .apt-form input[type="date"], .apt-form textarea {
-  width: 100%; padding: 10px 12px; font-size: 16px; font-family: var(--lp-font);
-  border: 1px solid var(--af-border); border-radius: var(--af-radius);
-  background: var(--af-field-bg); color: var(--af-text); transition: border-color .15s; -webkit-appearance: none; }
-.apt-form select {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%235f6e86' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
-  background-repeat: no-repeat; background-position: right 12px center; padding-right: 32px; }
-.apt-form select:focus, .apt-form input:focus, .apt-form textarea:focus {
-  outline: none; border-color: var(--af-primary); box-shadow: 0 0 0 3px rgb(var(--lp-primary-100)); }
-.apt-form textarea { resize: vertical; }
-.apt-form .name-row { display: flex; gap: 10px; }
-.apt-form .name-row input { flex: 1; }
-.apt-form .cb-group { display: flex; flex-wrap: wrap; gap: 6px 14px; }
-.apt-form .cb-label { display: flex; align-items: flex-start; gap: 6px; font-size: 14px; font-weight: 400;
-  cursor: pointer; margin-bottom: 0; line-height: 1.3; }
-.apt-form .cb-label input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--af-primary);
-  flex-shrink: 0; margin-top: 1px; }
-.apt-form .consent-text { font-size: 12px; color: var(--af-muted); margin-top: 6px; line-height: 1.4; }
-.apt-form .consent-text a { color: var(--af-primary-dark); text-decoration: underline; }
-.apt-form .consent-label { font-weight: 500; }
-.apt-form .btn-submit { display: block; width: 100%; padding: 14px 24px; font-size: 16px; font-weight: 700;
-  font-family: var(--lp-font-heading, var(--lp-font)); color: rgb(var(--lp-on-accent));
-  background: rgb(var(--lp-accent-500)); border: none; border-radius: var(--lp-radius-btn, 10px);
-  cursor: pointer; margin-top: 24px; transition: background .15s; box-shadow: var(--lp-shadow-card); }
-.apt-form .btn-submit:hover { background: rgb(var(--lp-accent-600)); }
-.apt-form .btn-submit:disabled { opacity: .6; cursor: not-allowed; }
-.apt-form .msg-success { display: none; padding: 24px 20px; text-align: center; color: #065f46;
-  background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: var(--af-radius); margin-top: 16px;
-  font-weight: 500; font-size: 16px; }
-.apt-form .msg-error { display: none; padding: 12px; color: var(--af-error); background: #fef2f2;
-  border: 1px solid #fecaca; border-radius: var(--af-radius); margin-top: 8px; font-size: 14px; }
-.apt-form .field-error { border-color: var(--af-error) !important; }
-.apt-form .field.field-error input[type="checkbox"] { outline: 2px solid var(--af-error); outline-offset: 2px; }
-.apt-form .field.field-error .consent-label { color: var(--af-error); }
-.apt-form .field.field-error > label { color: var(--af-error); }
-.apt-form .field.field-error .cb-group { border: 1px solid var(--af-error); border-radius: 8px; padding: 8px 10px; }
-@media (max-width: 480px) { .apt-form .cb-group { gap: 4px 10px; } }
-
-/* landing-page chrome */
-.hero-band { background: linear-gradient(180deg, rgb(var(--lp-primary-50)) 0%, rgb(var(--lp-surface)) 100%); }
-.trust-chip { display: inline-flex; align-items: center; gap: .4rem; padding: .35rem .75rem;
-  border: 1px solid rgb(var(--lp-outline)); border-radius: 999px; background: rgb(var(--lp-surface-container));
-  font-size: 13px; color: rgb(var(--lp-on-surface-variant)); white-space: nowrap; }
-.trust-chip svg { color: rgb(var(--lp-primary-500)); }
-.form-card { background: rgb(var(--lp-surface-container)); border: 1px solid rgb(var(--lp-outline));
-  border-radius: var(--lp-radius-card, 14px); box-shadow: var(--lp-shadow-card); }
-.step-num { display: flex; align-items: center; justify-content: center; width: 2rem; height: 2rem;
-  border-radius: 999px; background: rgb(var(--lp-primary-500)); color: #fff; font-weight: 700; flex-shrink: 0; }
-.heading-font { font-family: var(--lp-font-heading); font-weight: var(--lp-heading-weight, 800);
-  letter-spacing: var(--lp-heading-tracking, -0.01em); }
-</style>
-</head>
-<body class="min-h-screen flex flex-col">
-<header class="lp-site-header sticky top-0 z-40 border-b border-outline bg-surface-container/95 backdrop-blur"> <div class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-4 py-3"> <a href="https://dallasapartmentreviews.com/" class="flex shrink-0 items-center gap-2"> <img src="/images/logo.png" alt="Dallas Apartment Reviews Directory" class="h-12 w-auto">  </a> <!-- Desktop nav. Kept intentionally lean (4-5 items): no Home (the logo covers it), tools fold
-         into the guides dropdown, and About/Methodology live in the footer only. --> <nav class="hidden items-center gap-6 md:flex" aria-label="Primary"> <!-- Browse --> <div class="relative group"> <button type="button" class="inline-flex items-center gap-1 border-b-2 pb-0.5 text-sm transition-colors border-transparent text-on-surface-variant hover:text-primary-600" aria-haspopup="true">Find <svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button> <div class="lp-menu invisible absolute left-0 top-full z-30 max-h-[70vh] min-w-[16rem] overflow-y-auto p-2 opacity-0 transition-opacity duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"> <a href="https://dallasapartmentreviews.com/browse/" class="flex items-center justify-between rounded-btn px-3 py-2 text-sm font-semibold text-primary-600 hover:bg-primary-50">Search &amp; map <span aria-hidden="true">&rarr;</span></a> <div class="my-1 border-t border-outline-variant"></div>  <a href="https://dallasapartmentreviews.com/browse/?category=affordable-value" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Affordable &amp; Budget-Friendly</a><a href="https://dallasapartmentreviews.com/browse/?category=corporate-furnished" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Corporate &amp; Furnished Housing</a><a href="https://dallasapartmentreviews.com/browse/?category=luxury-high-rise" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Luxury High-Rise Living</a><a href="https://dallasapartmentreviews.com/browse/?category=pet-friendly" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Pet-Friendly Communities</a><a href="https://dallasapartmentreviews.com/browse/?category=senior-55-plus" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Senior / 55+ Communities</a><a href="https://dallasapartmentreviews.com/browse/?category=student-housing" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Student Housing</a><a href="https://dallasapartmentreviews.com/browse/?category=townhome-style" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Townhome &amp; Garden-Style Communities</a> </div> </div> <!-- Cities (entered hub cities, capped; shown alongside Areas in the mixed case). The see-all
-           goes to /locations/, which lists every hub AND coverage city. --> <div class="relative group"> <button type="button" class="inline-flex items-center gap-1 border-b-2 pb-0.5 text-sm transition-colors border-transparent text-on-surface-variant hover:text-primary-600" aria-haspopup="true">Popular <svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button> <div class="lp-menu invisible absolute left-0 top-full z-30 max-h-[70vh] min-w-[16rem] overflow-y-auto p-2 opacity-0 transition-opacity duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"> <a href="https://dallasapartmentreviews.com/dallas-tx/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Dallas, TX</a><a href="https://dallasapartmentreviews.com/mckinney-tx/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">McKinney, TX</a><a href="https://dallasapartmentreviews.com/plano-tx/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Plano, TX</a> <div class="my-1 border-t border-outline-variant"></div> <a href="https://dallasapartmentreviews.com/locations/" class="flex items-center justify-between rounded-btn px-3 py-2 text-sm font-semibold text-primary-600 hover:bg-primary-50">All locations <span aria-hidden="true">&rarr;</span></a> </div> </div> <!-- Areas (region's own neighborhoods) -->  <!-- Best --> <div class="relative group"> <button type="button" class="inline-flex items-center gap-1 border-b-2 pb-0.5 text-sm transition-colors border-transparent text-on-surface-variant hover:text-primary-600" aria-haspopup="true">Best <svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button> <div class="lp-menu invisible absolute left-0 top-full z-30 max-h-[70vh] min-w-[16rem] overflow-y-auto p-2 opacity-0 transition-opacity duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"> <a href="https://dallasapartmentreviews.com/dallas-tx/best/apartment-complexes/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Best Apartments in Dallas</a><a href="https://dallasapartmentreviews.com/mckinney-tx/best/apartment-complexes/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Best Apartments in McKinney</a><a href="https://dallasapartmentreviews.com/plano-tx/best/apartment-complexes/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Best Apartments in Plano</a> <div class="my-1 border-t border-outline-variant"></div> <a href="https://dallasapartmentreviews.com/best/" class="flex items-center justify-between rounded-btn px-3 py-2 text-sm font-semibold text-primary-600 hover:bg-primary-50">All rankings <span aria-hidden="true">&rarr;</span></a> </div> </div> <!-- Content sections: ONE dropdown of section INDEX links (Guides / Tools / Resources / Glossary),
-           never the individual guide/tool titles. Parent label varied per site (navLabel('sections')). --> <div class="relative group"> <button type="button" class="inline-flex items-center gap-1 border-b-2 pb-0.5 text-sm transition-colors border-transparent text-on-surface-variant hover:text-primary-600" aria-haspopup="true">Guides <svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button> <div class="lp-menu invisible absolute left-0 top-full z-30 max-h-[70vh] min-w-[16rem] overflow-y-auto p-2 opacity-0 transition-opacity duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"> <a href="https://dallasapartmentreviews.com/guide/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Advice</a><a href="https://dallasapartmentreviews.com/tools/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Utilities</a><a href="https://dallasapartmentreviews.com/resources/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Help</a><a href="https://dallasapartmentreviews.com/glossary/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Glossary</a> </div> </div> <a href="https://dallasapartmentreviews.com/compare/" class="inline-flex items-center gap-1 border-b-2 pb-0.5 text-sm transition-colors border-transparent text-on-surface-variant hover:text-primary-600">Compare</a> <form action="https://dallasapartmentreviews.com/browse/" method="get" role="search" class="relative ml-1"> <label class="sr-only" for="lp-nav-search">Search businesses</label> <input id="lp-nav-search" type="search" name="q" placeholder="Search…" class="lp-input w-44 py-2 pl-4 pr-9 text-sm"> <svg class="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-on-surface-variant" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.8"></circle><path d="m14 14 3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg> </form> <div class="ml-1 flex items-center gap-2"> <a href="tel:469-283-3766" aria-label="Call" class="flex h-9 w-9 items-center justify-center rounded-full text-on-surface-variant transition-colors hover:bg-surface-alt hover:text-primary-600"> <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"></path></svg> </a>  <a href="https://search.dallasapartmentreviews.com/" rel="noopener nofollow" class="lp-accent-bg text-on-accent whitespace-nowrap rounded-btn px-3.5 py-2 text-sm font-semibold">Start Your Search</a> </div> </nav> <!-- Mobile menu: full-screen sheet. <details> keeps it working with no JS; the burger swaps to
-         an X via CSS on [open]. The panel is ABSOLUTE (top-full), not fixed: the header's
-         backdrop-blur creates a containing block for fixed descendants, so position:fixed would
-         resolve against the header box, not the viewport. Anchoring to the header (itself
-         fixed/sticky at top-0) gives the same full-screen result reliably. --> <details class="lp-mnav md:hidden"> <summary class="lp-btn-ghost flex cursor-pointer list-none p-2 text-on-surface-variant" aria-label="Menu"> <svg class="lp-mnav-burger h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg> <svg class="lp-mnav-close hidden h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg> <span class="sr-only">Menu</span> </summary> <div class="lp-mnav-panel absolute inset-x-0 top-full z-40 overflow-y-auto overscroll-contain border-t border-outline bg-surface-container"> <div class="mx-auto max-w-6xl px-4 pb-8 pt-4"> <form action="https://dallasapartmentreviews.com/browse/" method="get" role="search" class="relative mb-2"> <label class="sr-only" for="lp-mnav-search">Search businesses</label> <input id="lp-mnav-search" type="search" name="q" placeholder="Search businesses…" class="lp-input w-full py-3 pl-4 pr-11 text-base"> <svg class="pointer-events-none absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2 text-on-surface-variant" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.8"></circle><path d="m14 14 3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg> </form> <div class="mb-3 flex gap-2"> <a href="https://search.dallasapartmentreviews.com/" rel="noopener nofollow" class="lp-accent-bg text-on-accent flex-1 rounded-btn px-4 py-3 text-center text-base font-semibold">Start Your Search</a> <a href="tel:469-283-3766" class="flex items-center justify-center rounded-btn border border-outline px-4 py-3 text-base font-medium text-on-surface">Call</a> </div> <nav class="divide-y divide-outline-variant" aria-label="Mobile"> <a href="https://dallasapartmentreviews.com/" class="flex items-center px-1 py-3 text-base font-medium text-on-surface">Home</a> <a href="https://dallasapartmentreviews.com/browse/" class="flex items-center px-1 py-3 text-base font-medium text-on-surface">Browse &amp; map</a> <details class="lp-mnav-group"> <summary class="flex cursor-pointer list-none items-center justify-between px-1 py-3 text-base font-medium text-on-surface">Find <svg class="lp-mnav-chev h-4 w-4 shrink-0 text-on-surface-variant transition-transform duration-150" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary> <div class="pb-3">  <a href="https://dallasapartmentreviews.com/browse/?category=affordable-value" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Affordable &amp; Budget-Friendly</a><a href="https://dallasapartmentreviews.com/browse/?category=corporate-furnished" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Corporate &amp; Furnished Housing</a><a href="https://dallasapartmentreviews.com/browse/?category=luxury-high-rise" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Luxury High-Rise Living</a><a href="https://dallasapartmentreviews.com/browse/?category=pet-friendly" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Pet-Friendly Communities</a><a href="https://dallasapartmentreviews.com/browse/?category=senior-55-plus" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Senior / 55+ Communities</a><a href="https://dallasapartmentreviews.com/browse/?category=student-housing" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Student Housing</a><a href="https://dallasapartmentreviews.com/browse/?category=townhome-style" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Townhome &amp; Garden-Style Communities</a> </div> </details> <details class="lp-mnav-group"> <summary class="flex cursor-pointer list-none items-center justify-between px-1 py-3 text-base font-medium text-on-surface">Popular <svg class="lp-mnav-chev h-4 w-4 shrink-0 text-on-surface-variant transition-transform duration-150" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary> <div class="pb-3"> <a href="https://dallasapartmentreviews.com/dallas-tx/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Dallas, TX</a><a href="https://dallasapartmentreviews.com/mckinney-tx/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">McKinney, TX</a><a href="https://dallasapartmentreviews.com/plano-tx/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Plano, TX</a> <a href="https://dallasapartmentreviews.com/locations/" class="block rounded-btn px-3 py-2.5 text-[15px] font-semibold text-primary-600 hover:bg-surface-alt">All locations &rarr;</a> </div> </details>  <a href="https://dallasapartmentreviews.com/best/" class="flex items-center px-1 py-3 text-base font-medium text-on-surface">Best</a> <details class="lp-mnav-group"> <summary class="flex cursor-pointer list-none items-center justify-between px-1 py-3 text-base font-medium text-on-surface">Guides <svg class="lp-mnav-chev h-4 w-4 shrink-0 text-on-surface-variant transition-transform duration-150" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary> <div class="pb-3"> <a href="https://dallasapartmentreviews.com/guide/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Advice</a><a href="https://dallasapartmentreviews.com/tools/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Utilities</a><a href="https://dallasapartmentreviews.com/resources/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Help</a><a href="https://dallasapartmentreviews.com/glossary/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Glossary</a> </div> </details> <a href="https://dallasapartmentreviews.com/compare/" class="flex items-center px-1 py-3 text-base font-medium text-on-surface">Compare</a> </nav> </div> </div> </details> </div> </header><script>
-(function () {
-  var h = document.querySelector('header.lp-site-header');
-  if (!h) return;
-  var setH = function () { document.documentElement.style.setProperty('--lp-header-h', h.offsetHeight + 'px'); };
-  setH();
-  window.addEventListener('resize', setH, { passive: true });
-  var m = h.querySelector('.lp-mnav');
-  if (m) {
-    m.addEventListener('toggle', function () {
-      document.documentElement.classList.toggle('lp-mnav-open', m.open);
-    });
-  }
-})();
-</script>
-<main class="flex-1">
-
-<section class="hero-band">
-  <div class="mx-auto max-w-2xl px-4 pt-5 pb-4 text-center sm:pt-9 sm:pb-6">
-    <h1 class="heading-font text-[26px] leading-[1.15] tracking-tight text-on-surface sm:text-4xl">
-      Get a Free List of Dallas Apartments That Fit Your Situation</h1>
-    <p class="mx-auto mt-2 max-w-xl text-[15px] leading-snug text-on-surface-variant sm:text-base">
-      We'll send your best options by location, price, and current move-in specials.
-      Most lists go out within a day or two.</p>
-    <p class="mt-2.5 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-[13px] font-medium text-on-surface-variant">
-      <span class="inline-flex items-center gap-1 text-on-surface"><svg width="13" height="13" style="flex-shrink:0;color:rgb(var(--lp-primary-600))" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>100% free</span>
-      <span class="inline-flex items-center gap-1 text-on-surface"><svg width="13" height="13" style="flex-shrink:0;color:rgb(var(--lp-primary-600))" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Licensed locators</span>
-      <span class="inline-flex items-center gap-1 text-on-surface"><svg width="13" height="13" style="flex-shrink:0;color:rgb(var(--lp-primary-600))" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Takes about 60 seconds</span>
-    </p>
-  </div>
-</section>
-
-<section id="apartment-form" class="scroll-mt-24">
-  <div class="mx-auto max-w-2xl px-3 pb-8 sm:px-4 sm:pb-10">
-    <div class="form-card p-4 sm:p-8">
-      <div class="apt-form">
-<form id="aptForm" method="POST" action="https://n8n.dentals.targetdial.co/webhook/NewWeb3" novalidate>
- <input type="hidden" name="referredBy" value="BROKER: Spirit Real Estate (TREC# 562021) REALTOR &amp; LOCATOR: the Dallas Second Chance Team MEMBER: NATIONAL ASSOCIATION OF APARTMENT LOCATORS. Upon client approval - you will be receiving the lease verification and invoice from Karla Robinson / Spirit Real Estate Group">
+<!DOCTYPE html><html lang="en" data-preset="modern" data-base="light" data-hero="spotlight" data-header="solid" data-cards="registry" style="--lp-primary-50:244 249 253;--lp-primary-100:229 240 249;--lp-primary-200:200 223 242;--lp-primary-300:159 200 232;--lp-primary-400:104 169 218;--lp-primary-500:2 132 199;--lp-primary-600:0 111 169;--lp-primary-700:0 85 131;--lp-primary-800:0 76 119;--lp-primary-900:0 60 96;--lp-secondary-50:244 248 247;--lp-secondary-100:228 238 237;--lp-secondary-200:198 218 215;--lp-secondary-300:156 192 187;--lp-secondary-400:101 158 151;--lp-secondary-500:15 118 110;--lp-secondary-600:12 101 94;--lp-secondary-700:8 78 73;--lp-secondary-800:7 71 66;--lp-secondary-900:5 58 54;--lp-neutral-50:247 248 249;--lp-neutral-100:235 237 241;--lp-neutral-200:212 217 224;--lp-neutral-300:182 190 202;--lp-neutral-400:144 156 173;--lp-neutral-500:100 116 139;--lp-neutral-600:84 98 118;--lp-neutral-700:64 75 91;--lp-neutral-800:57 68 82;--lp-neutral-900:46 54 66;--lp-accent-50:255 250 245;--lp-accent-100:255 244 232;--lp-accent-200:254 231 205;--lp-accent-300:253 213 168;--lp-accent-400:250 189 115;--lp-accent-500:245 158 11;--lp-accent-600:205 130 0;--lp-accent-700:153 94 0;--lp-accent-800:137 82 0;--lp-accent-900:107 61 0;--lp-surface:246 250 253;--lp-surface-alt:238 245 251;--lp-surface-container:255 255 255;--lp-surface-container-high:241 245 249;--lp-on-surface:15 23 42;--lp-on-surface-variant:95 110 134;--lp-outline:226 232 240;--lp-outline-variant:241 245 249;--lp-accent:245 158 11;--lp-on-accent:0 0 0;--lp-brand:#0284c7;--lp-accent:#f59e0b;--lp-font:'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;--lp-font-heading:'Archivo', system-ui, sans-serif;--lp-heading-weight:800;--lp-heading-tracking:-0.01em;--lp-text-display-desktop:44px;--lp-text-display-mobile:32px;--lp-text-display-tracking:-0.02em;--lp-text-h1-desktop:36px;--lp-text-h1-mobile:28px;--lp-text-h1-tracking:-0.015em;--lp-text-h2-desktop:26px;--lp-text-h2-mobile:22px;--lp-text-h2-tracking:-0.01em;--lp-text-h3-desktop:21px;--lp-text-h3-mobile:19px;--lp-text-h3-tracking:0em;--lp-radius-sm:0.375rem;--lp-radius-md:0.625rem;--lp-radius-lg:0.875rem;--lp-radius-xl:1.25rem;--lp-radius-card:14px;--lp-radius-btn:10px;--lp-radius-chip:0.5rem;--lp-shadow-card:0 1px 3px rgb(15 23 42 / 0.08), 0 1px 2px rgb(15 23 42 / 0.04);--lp-shadow-hover:0 10px 28px rgb(15 23 42 / 0.12);--lp-card-border:1px solid transparent;--lp-ghost-border:1px solid transparent;--lp-ghost-bg:rgb(var(--lp-surface-alt));--lp-ghost-bg-hover:rgb(var(--lp-surface-container-high));--lp-link-decoration:none;--lp-link-underline-color:transparent;--lp-signature:none;"> <head><script src="/sca-dropdown-validation.js"></script><script src="/guest-card-copy-v1.js"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Get Your Dallas Apartment List | Dallas Apartment Reviews</title><meta name="description" content="Tell us where in Dallas you want to live, your budget and your rental history. We build a free list of apartments that fit and send it by text and email."><meta name="robots" content="noindex, nofollow"><link rel="icon" href="/images/brand/favicon.png"><link rel="preload" href="/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin><style>@font-face{font-family:'Archivo';font-style:normal;font-weight:400 700;font-display:swap;src:url(/fonts/archivo-vietnamese.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}@font-face{font-family:'Archivo';font-style:normal;font-weight:400 700;font-display:swap;src:url(/fonts/archivo-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'Archivo';font-style:normal;font-weight:400 700;font-display:swap;src:url(/fonts/archivo-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Inter';font-style:normal;font-weight:400 700;font-display:swap;src:url(/fonts/inter-cyrillic-ext.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}@font-face{font-family:'Inter';font-style:normal;font-weight:400 700;font-display:swap;src:url(/fonts/inter-cyrillic.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}@font-face{font-family:'Inter';font-style:normal;font-weight:400 700;font-display:swap;src:url(/fonts/inter-greek-ext.woff2) format('woff2');unicode-range:U+1F00-1FFF}@font-face{font-family:'Inter';font-style:normal;font-weight:400 700;font-display:swap;src:url(/fonts/inter-greek.woff2) format('woff2');unicode-range:U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF}@font-face{font-family:'Inter';font-style:normal;font-weight:400 700;font-display:swap;src:url(/fonts/inter-vietnamese.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}@font-face{font-family:'Inter';font-style:normal;font-weight:400 700;font-display:swap;src:url(/fonts/inter-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'Inter';font-style:normal;font-weight:400 700;font-display:swap;src:url(/fonts/inter-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}body{font-family:var(--lp-font)}</style><link rel="stylesheet" href="/_astro/_slug_.C0pZw6MK.css">
+<link rel="stylesheet" href="/_astro/_slug_.BUUmSsiL.css"><link rel="stylesheet" href="/css/form.css"><style>@media (max-width:767px){header.lp-site-header img{height:auto;max-width:calc(100vw - 96px)}}.bca .form-wrap h1{color:rgb(var(--lp-on-surface))}.bca .btn-submit{background:var(--lp-accent);color:rgb(var(--lp-on-accent))}.bca .btn-submit:hover{background:rgb(var(--lp-accent-600))}</style></head><body class="min-h-screen flex flex-col"><header class="lp-site-header sticky top-0 z-40 border-b border-outline bg-surface-container/95 backdrop-blur"> <div class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-4 py-3"> <a href="https://dallasapartmentreviews.com/" class="flex shrink-0 items-center gap-2"> <img src="/images/brand/logo.png" alt="Dallas Apartment Reviews Directory" class="h-12 w-auto">  </a>  <nav class="hidden items-center gap-6 md:flex" aria-label="Primary">  <div class="relative group"> <button type="button" class="inline-flex items-center gap-1 border-b-2 pb-0.5 text-sm transition-colors border-transparent text-on-surface-variant hover:text-primary-600" aria-haspopup="true">Find <svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button> <div class="lp-menu invisible absolute left-0 top-full z-30 max-h-[70vh] min-w-[16rem] overflow-y-auto p-2 opacity-0 transition-opacity duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"> <a href="https://dallasapartmentreviews.com/browse/" class="flex items-center justify-between rounded-btn px-3 py-2 text-sm font-semibold text-primary-600 hover:bg-primary-50">Search &amp; map <span aria-hidden="true">&rarr;</span></a> <div class="my-1 border-t border-outline-variant"></div> <a href="https://dallasapartmentreviews.com/category/affordable-value/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Affordable &amp; Budget-Friendly</a><a href="https://dallasapartmentreviews.com/category/corporate-furnished/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Corporate &amp; Furnished Housing</a><a href="https://dallasapartmentreviews.com/category/luxury-high-rise/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Luxury High-Rise Living</a><a href="https://dallasapartmentreviews.com/category/pet-friendly/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Pet-Friendly Communities</a><a href="https://dallasapartmentreviews.com/category/senior-55-plus/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Senior / 55+ Communities</a><a href="https://dallasapartmentreviews.com/category/student-housing/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Student Housing</a><a href="https://dallasapartmentreviews.com/category/townhome-style/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Townhome &amp; Garden-Style Communities</a>  </div> </div>  <div class="relative group"> <button type="button" class="inline-flex items-center gap-1 border-b-2 pb-0.5 text-sm transition-colors border-transparent text-on-surface-variant hover:text-primary-600" aria-haspopup="true">Popular <svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button> <div class="lp-menu invisible absolute left-0 top-full z-30 max-h-[70vh] min-w-[16rem] overflow-y-auto p-2 opacity-0 transition-opacity duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"> <a href="https://dallasapartmentreviews.com/mckinney-tx/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">McKinney, TX</a><a href="https://dallasapartmentreviews.com/dallas-tx/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Dallas, TX</a><a href="https://dallasapartmentreviews.com/plano-tx/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Plano, TX</a> <div class="my-1 border-t border-outline-variant"></div> <a href="https://dallasapartmentreviews.com/locations/" class="flex items-center justify-between rounded-btn px-3 py-2 text-sm font-semibold text-primary-600 hover:bg-primary-50">All locations <span aria-hidden="true">&rarr;</span></a> </div> </div>    <div class="relative group"> <button type="button" class="inline-flex items-center gap-1 border-b-2 pb-0.5 text-sm transition-colors border-transparent text-on-surface-variant hover:text-primary-600" aria-haspopup="true">Best <svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button> <div class="lp-menu invisible absolute left-0 top-full z-30 max-h-[70vh] min-w-[16rem] overflow-y-auto p-2 opacity-0 transition-opacity duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"> <a href="https://dallasapartmentreviews.com/dallas-tx/best/apartment-complexes/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Best Apartments in Dallas</a><a href="https://dallasapartmentreviews.com/mckinney-tx/best/apartment-complexes/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Best Apartments in McKinney</a><a href="https://dallasapartmentreviews.com/plano-tx/best/apartment-complexes/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Best Apartments in Plano</a> <div class="my-1 border-t border-outline-variant"></div> <a href="https://dallasapartmentreviews.com/best/" class="flex items-center justify-between rounded-btn px-3 py-2 text-sm font-semibold text-primary-600 hover:bg-primary-50">All rankings <span aria-hidden="true">&rarr;</span></a> </div> </div>  <div class="relative group"> <button type="button" class="inline-flex items-center gap-1 border-b-2 pb-0.5 text-sm transition-colors border-transparent text-on-surface-variant hover:text-primary-600" aria-haspopup="true">Guides <svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button> <div class="lp-menu invisible absolute left-0 top-full z-30 max-h-[70vh] min-w-[16rem] overflow-y-auto p-2 opacity-0 transition-opacity duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"> <a href="https://dallasapartmentreviews.com/guide/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Advice</a><a href="https://dallasapartmentreviews.com/tools/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Utilities</a><a href="https://dallasapartmentreviews.com/resources/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Help</a><a href="https://dallasapartmentreviews.com/glossary/" class="block rounded-btn px-3 py-2 text-sm text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Glossary</a> </div> </div> <a href="https://dallasapartmentreviews.com/compare/" class="inline-flex items-center gap-1 border-b-2 pb-0.5 text-sm transition-colors border-transparent text-on-surface-variant hover:text-primary-600">Compare</a> <form action="https://dallasapartmentreviews.com/browse/" method="get" role="search" class="relative ml-1"> <label class="sr-only" for="lp-nav-search">Search businesses</label> <input id="lp-nav-search" type="search" name="q" placeholder="Search…" class="lp-input w-44 py-2 pl-4 pr-9 text-sm"> <svg class="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-on-surface-variant" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.8"></circle><path d="m14 14 3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg> </form> <div class="ml-1 flex items-center gap-2"> <a href="tel:469-283-3766" aria-label="Call" class="flex h-9 w-9 items-center justify-center rounded-full text-on-surface-variant transition-colors hover:bg-surface-alt hover:text-primary-600"> <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"></path></svg> </a>  <a href="https://dallasapartmentreviews.com/" rel="noopener nofollow" class="lp-accent-bg text-on-accent whitespace-nowrap rounded-btn px-3.5 py-2 text-sm font-semibold">Start Your Search</a> </div> </nav>  <details class="lp-mnav md:hidden"> <summary class="lp-btn-ghost flex cursor-pointer list-none p-2 text-on-surface-variant" aria-label="Menu"> <svg class="lp-mnav-burger h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg> <svg class="lp-mnav-close hidden h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg> <span class="sr-only">Menu</span> </summary> <div class="lp-mnav-panel absolute inset-x-0 top-full z-40 overflow-y-auto overscroll-contain border-t border-outline bg-surface-container"> <div class="mx-auto max-w-6xl px-4 pb-8 pt-4"> <form action="https://dallasapartmentreviews.com/browse/" method="get" role="search" class="relative mb-2"> <label class="sr-only" for="lp-mnav-search">Search businesses</label> <input id="lp-mnav-search" type="search" name="q" placeholder="Search businesses…" class="lp-input w-full py-3 pl-4 pr-11 text-base"> <svg class="pointer-events-none absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2 text-on-surface-variant" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.8"></circle><path d="m14 14 3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg> </form> <div class="mb-3 flex gap-2"> <a href="https://dallasapartmentreviews.com/" rel="noopener nofollow" class="lp-accent-bg text-on-accent flex-1 rounded-btn px-4 py-3 text-center text-base font-semibold">Start Your Search</a> <a href="tel:469-283-3766" class="flex items-center justify-center rounded-btn border border-outline px-4 py-3 text-base font-medium text-on-surface">Call</a> </div> <nav class="divide-y divide-outline-variant" aria-label="Mobile"> <a href="https://dallasapartmentreviews.com/" class="flex items-center px-1 py-3 text-base font-medium text-on-surface">Home</a> <a href="https://dallasapartmentreviews.com/browse/" class="flex items-center px-1 py-3 text-base font-medium text-on-surface">Browse &amp; map</a> <details class="lp-mnav-group"> <summary class="flex cursor-pointer list-none items-center justify-between px-1 py-3 text-base font-medium text-on-surface">Find <svg class="lp-mnav-chev h-4 w-4 shrink-0 text-on-surface-variant transition-transform duration-150" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary> <div class="pb-3"> <a href="https://dallasapartmentreviews.com/category/affordable-value/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Affordable &amp; Budget-Friendly</a><a href="https://dallasapartmentreviews.com/category/corporate-furnished/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Corporate &amp; Furnished Housing</a><a href="https://dallasapartmentreviews.com/category/luxury-high-rise/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Luxury High-Rise Living</a><a href="https://dallasapartmentreviews.com/category/pet-friendly/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Pet-Friendly Communities</a><a href="https://dallasapartmentreviews.com/category/senior-55-plus/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Senior / 55+ Communities</a><a href="https://dallasapartmentreviews.com/category/student-housing/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Student Housing</a><a href="https://dallasapartmentreviews.com/category/townhome-style/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Townhome &amp; Garden-Style Communities</a>  </div> </details> <details class="lp-mnav-group"> <summary class="flex cursor-pointer list-none items-center justify-between px-1 py-3 text-base font-medium text-on-surface">Popular <svg class="lp-mnav-chev h-4 w-4 shrink-0 text-on-surface-variant transition-transform duration-150" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary> <div class="pb-3"> <a href="https://dallasapartmentreviews.com/mckinney-tx/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">McKinney, TX</a><a href="https://dallasapartmentreviews.com/dallas-tx/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Dallas, TX</a><a href="https://dallasapartmentreviews.com/plano-tx/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Plano, TX</a> <a href="https://dallasapartmentreviews.com/locations/" class="block rounded-btn px-3 py-2.5 text-[15px] font-semibold text-primary-600 hover:bg-surface-alt">All locations &rarr;</a> </div> </details>  <a href="https://dallasapartmentreviews.com/best/" class="flex items-center px-1 py-3 text-base font-medium text-on-surface">Best</a> <details class="lp-mnav-group"> <summary class="flex cursor-pointer list-none items-center justify-between px-1 py-3 text-base font-medium text-on-surface">Guides <svg class="lp-mnav-chev h-4 w-4 shrink-0 text-on-surface-variant transition-transform duration-150" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary> <div class="pb-3"> <a href="https://dallasapartmentreviews.com/guide/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Advice</a><a href="https://dallasapartmentreviews.com/tools/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Utilities</a><a href="https://dallasapartmentreviews.com/resources/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Help</a><a href="https://dallasapartmentreviews.com/glossary/" class="block rounded-btn px-3 py-2.5 text-[15px] text-on-surface-variant hover:bg-surface-alt hover:text-primary-700">Glossary</a> </div> </details> <a href="https://dallasapartmentreviews.com/compare/" class="flex items-center px-1 py-3 text-base font-medium text-on-surface">Compare</a> </nav> </div> </div> </details> </div> </header>   <script>
+  (function () {
+    var h = document.querySelector('header.lp-site-header');
+    if (!h) return;
+    var setH = function () { document.documentElement.style.setProperty('--lp-header-h', h.offsetHeight + 'px'); };
+    setH();
+    window.addEventListener('resize', setH, { passive: true });
+    var overlay = h.classList.contains('lp-header-overlay');
+    var atTop = function () { h.classList.toggle('lp-at-top', window.scrollY < 60); };
+    var m = h.querySelector('.lp-mnav');
+    if (m) {
+      m.addEventListener('toggle', function () {
+        // Lock page scroll behind the sheet; over a photo hero, solidify the transparent header so
+        // the nav row reads against the sheet, not the hero. atTop() restores it on close.
+        document.documentElement.classList.toggle('lp-mnav-open', m.open);
+        if (!overlay) return;
+        if (m.open) h.classList.remove('lp-at-top'); else atTop();
+      });
+    }
+    if (!overlay) return;
+    atTop();
+    window.addEventListener('scroll', atTop, { passive: true });
+  })();
+</script> <main id="main" class="flex-1 bca"><section class="pt-2 pb-8"><div class="form-wrap">
+ <h1 data-form-area-heading>Get Your Free Dallas Apartment List</h1>
+ <p class="form-desc">Takes about 2 minutes. Your list in 24 to 48 hours.</p>
+ <form id="aptForm" method="POST" action="https://n8n.dentals.targetdial.co/webhook/NewWeb3" novalidate>
+ <input type="hidden" name="referredBy" value="BROKER: Spirit Real Estate (TREC# 562021) REALTOR &amp; LOCATOR: the Dallas Apartment Locator Team MEMBER: NATIONAL ASSOCIATION OF APARTMENT LOCATORS. Upon client approval - you will be receiving the lease verification and invoice from Karla Robinson / Spirit Real Estate Group">
  <div class="field" id="field_moveDate">
  <label for="moveDate">I need to move: <span class="req">*</span></label>
  <input type="date" name="moveDate" id="moveDate" required>
@@ -130,7 +34,7 @@
  <div class="field" id="field_bedrooms">
  <label for="bedrooms">I need to have: <span class="req">*</span></label>
  <select name="bedrooms" id="bedrooms" required>
- <option value="">- Select -</option>
+ <option value="" disabled selected>- Select -</option>
  <option value="Studio">Studio</option>
  <option value="1bd / 1ba">1bd / 1ba</option>
  <option value="2bd / 1ba">2bd / 1ba</option>
@@ -141,7 +45,7 @@
  <div class="field" id="field_budget">
  <label for="budget">My budget is: <span class="req">*</span></label>
  <select name="budget" id="budget" required>
- <option value="">- Select -</option>
+ <option value="" disabled selected>- Select -</option>
  <option value="$750 - $1,000">$750 - $1,000</option>
  <option value="$1,000 - $1,250">$1,000 - $1,250</option>
  <option value="$1,250 - $1,500">$1,250 - $1,500</option>
@@ -156,8 +60,8 @@
  <div class="field" id="field_dallasArea" data-cond='{&quot;logic&quot;: &quot;any&quot;, &quot;action&quot;: &quot;show&quot;, &quot;rules&quot;: [{&quot;f&quot;: &quot;city&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Dallas&quot;}]}'>
  <label for="dallasArea">Which Dallas area: <span class="req">*</span></label>
  <select name="dallasArea" id="dallasArea" required>
- <option value="">- Select -</option>
- <option value="I&#x27;m really not sure (I would like to explore my options)">I&#x27;m really not sure (I would like to explore my options)</option>
+ <option value="" disabled selected>- Select -</option>
+ <option value="I&#x27;m really not sure (I would like to explore my options)">I&#x27;m really not sure (I would like to see my options)</option>
  <option value="Central (Downtown, Deep Ellum, Bishop Arts, Knox / Henderson, Lower Greenville, Oak Lawn, Med District)">Central (Downtown, Deep Ellum, Bishop Arts, Knox / Henderson, Lower Greenville, Oak Lawn, Med District)</option>
  <option value="North (Addison, Carrolton, Frisco, McKinney, Plano, Richardson, The Colony)">North (Addison, Carrolton, Frisco, McKinney, Plano, Richardson, The Colony)</option>
  <option value="South (Duncanville, Mansfield, Cedar Hill, DeSoto, Waxahachie, Wilmer )">South (Duncanville, Mansfield, Cedar Hill, DeSoto, Waxahachie, Wilmer )</option>
@@ -253,7 +157,7 @@
  <div class="field" id="field_rentalIssues" data-cond='{&quot;logic&quot;: &quot;any&quot;, &quot;action&quot;: &quot;show&quot;, &quot;rules&quot;: [{&quot;f&quot;: &quot;dallasArea&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;I&#x27;m really not sure (I would like to explore my options)&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Downtown Dallas&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Deep Ellum&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Uptown&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Victory Park / Design District&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Near Love Field&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Near Medical Center&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Knox / Henderson&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Greenville&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Oak Lawn&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Medical District / Parkland&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Bishop Arts / North Oak Cliff&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Kessler&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Not Sure - Need Help&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Addison&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Farmers Branch&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Carrollton&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Las Colinas&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Coppell&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Near DFW Airport&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Lewisville&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;The Colony (Grandscape / TopGolf)&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Frisco (Legacy West / PGA / Stonebriar)&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Prosper&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;McKinney&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Allen&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Plano (Legacy / Downtown / East Plano)&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Richardson (Telecom Corridor)&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Far North Dallas&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Denton&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Unsure - Need Assistance&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Duncanville&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Mansfield&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Cedar Hill&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;DeSoto&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Redbird&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Red Oak&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Waxahachie&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Not Sure - Need Assistance&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Lake Highlands&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Lakewood / White Rock&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Garland&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;I-635 / 30 Corridor&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Mesquite&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Rowlett&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Rockwall&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Fourney&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Balch Springs&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Not Sure Yet - Need Help&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Las Colinas / Irving&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;North MacArthuer Blvd&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Kessler Park / Stevens Park&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Trinity Groves / Sylvan 30&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Bishop Arts / Oak Cliff (West)&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Singleton Blvd&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Cockrell Hill / Westmoreland&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Grand Prairie&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Irving&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;HEB Cities&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Not Sure Yet - Need Help&quot;}]}'>
  <label for="rentalIssues">My rental issues are: <span class="req">*</span></label>
  <select name="rentalIssues" id="rentalIssues" required>
- <option value="">- Select -</option>
+ <option value="" disabled selected>- Select -</option>
  <option value="No rental issues!">No rental issues!</option>
  <option value="1st Time Renter">1st Time Renter</option>
  <option value="Broken Lease">Broken Lease</option>
@@ -265,7 +169,7 @@
  <div class="field" id="field_brokenLease" data-cond='{&quot;logic&quot;: &quot;any&quot;, &quot;action&quot;: &quot;show&quot;, &quot;rules&quot;: [{&quot;f&quot;: &quot;rentalIssues&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Broken Lease&quot;}]}'>
  <label for="brokenLease">My broken lease is: <span class="req">*</span></label>
  <select name="brokenLease" id="brokenLease" required>
- <option value="">- Select -</option>
+ <option value="" disabled selected>- Select -</option>
  <option value="0 - 1 years ago">0 - 1 years ago</option>
  <option value="1 - 2 years ago">1 - 2 years ago</option>
  <option value="3 - 5 years ago">3 - 5 years ago</option>
@@ -275,7 +179,7 @@
  <div class="field" id="field_brokenLeaseDebt" data-cond='{&quot;logic&quot;: &quot;any&quot;, &quot;action&quot;: &quot;show&quot;, &quot;rules&quot;: [{&quot;f&quot;: &quot;brokenLease&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;0 - 1 years ago&quot;}, {&quot;f&quot;: &quot;brokenLease&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;1 - 2 years ago&quot;}, {&quot;f&quot;: &quot;brokenLease&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;3 - 5 years ago&quot;}, {&quot;f&quot;: &quot;brokenLease&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;5+ years or longer&quot;}]}'>
  <label for="brokenLeaseDebt">My broken lease property debt is: <span class="req">*</span></label>
  <select name="brokenLeaseDebt" id="brokenLeaseDebt" required>
- <option value="">- Select -</option>
+ <option value="" disabled selected>- Select -</option>
  <option value="Zero balance - I don&#x27;t owe anything!">Zero balance - I don&#x27;t owe anything!</option>
  <option value="$1 - $1,000">$1 - $1,000</option>
  <option value="$1,000 - $2,500">$1,000 - $2,500</option>
@@ -287,7 +191,7 @@
  <div class="field" id="field_eviction" data-cond='{&quot;logic&quot;: &quot;any&quot;, &quot;action&quot;: &quot;show&quot;, &quot;rules&quot;: [{&quot;f&quot;: &quot;rentalIssues&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Eviction&quot;}]}'>
  <label for="eviction">My eviction is: <span class="req">*</span></label>
  <select name="eviction" id="eviction" required>
- <option value="">- Select -</option>
+ <option value="" disabled selected>- Select -</option>
  <option value="0 - 1 years ago">0 - 1 years ago</option>
  <option value="1 - 2 years ago">1 - 2 years ago</option>
  <option value="3 - 5 years ago">3 - 5 years ago</option>
@@ -297,7 +201,7 @@
  <div class="field" id="field_evictionDebt" data-cond='{&quot;logic&quot;: &quot;any&quot;, &quot;action&quot;: &quot;show&quot;, &quot;rules&quot;: [{&quot;f&quot;: &quot;eviction&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;0 - 1 years ago&quot;}, {&quot;f&quot;: &quot;eviction&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;1 - 2 years ago&quot;}, {&quot;f&quot;: &quot;eviction&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;3 - 5 years ago&quot;}, {&quot;f&quot;: &quot;eviction&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;5+ years ago&quot;}]}'>
  <label for="evictionDebt">My eviction property debt is: <span class="req">*</span></label>
  <select name="evictionDebt" id="evictionDebt" required>
- <option value="">- Select -</option>
+ <option value="" disabled selected>- Select -</option>
  <option value="Zero balance - I don&#x27;t owe anything!">Zero balance - I don&#x27;t owe anything!</option>
  <option value="$1 - $1,000">$1 - $1,000</option>
  <option value="$1,000 - $2,500">$1,000 - $2,500</option>
@@ -309,7 +213,7 @@
  <div class="field" id="field_propertyDebt" data-cond='{&quot;logic&quot;: &quot;any&quot;, &quot;action&quot;: &quot;show&quot;, &quot;rules&quot;: [{&quot;f&quot;: &quot;rentalIssues&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Property Debt&quot;}]}'>
  <label for="propertyDebt">My property debt is: <span class="req">*</span></label>
  <select name="propertyDebt" id="propertyDebt" required>
- <option value="">- Select -</option>
+ <option value="" disabled selected>- Select -</option>
  <option value="Zero balance - I don&#x27;t owe anything!">Zero balance - I don&#x27;t owe anything!</option>
  <option value="$1 - $1,000">$1 - $1,000</option>
  <option value="$1,000 - $2,500">$1,000 - $2,500</option>
@@ -321,7 +225,7 @@
  <div class="field" id="field_propertyDebt2" data-cond='{&quot;logic&quot;: &quot;any&quot;, &quot;action&quot;: &quot;show&quot;, &quot;rules&quot;: [{&quot;f&quot;: &quot;propertyDebt&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;$1 - $1,000&quot;}, {&quot;f&quot;: &quot;propertyDebt&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;$1,000 - $2,500&quot;}, {&quot;f&quot;: &quot;propertyDebt&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;$2,500 - $5,000&quot;}, {&quot;f&quot;: &quot;propertyDebt&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;$5,001+&quot;}, {&quot;f&quot;: &quot;propertyDebt&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;I am on a payment plan&quot;}]}'>
  <label for="propertyDebt2">My active rental debt is: <span class="req">*</span></label>
  <select name="propertyDebt2" id="propertyDebt2" required>
- <option value="">- Select -</option>
+ <option value="" disabled selected>- Select -</option>
  <option value="ON a payment plan">ON a payment plan</option>
  <option value="NOT on a payment plan">NOT on a payment plan</option>
  </select>
@@ -329,7 +233,7 @@
  <div class="field" id="field_backgroundIssues" data-cond='{&quot;logic&quot;: &quot;any&quot;, &quot;action&quot;: &quot;show&quot;, &quot;rules&quot;: [{&quot;f&quot;: &quot;dallasArea&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;I&#x27;m really not sure (I would like to explore my options)&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Downtown Dallas&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Deep Ellum&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Uptown&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Victory Park / Design District&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Near Love Field&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Near Medical Center&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Knox / Henderson&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Greenville&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Oak Lawn&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Medical District / Parkland&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Bishop Arts / North Oak Cliff&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Kessler&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Not Sure - Need Help&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Addison&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Farmers Branch&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Carrollton&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Las Colinas&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Coppell&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Near DFW Airport&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Lewisville&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;The Colony (Grandscape / TopGolf)&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Frisco (Legacy West / PGA / Stonebriar)&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Prosper&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;McKinney&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Allen&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Plano (Legacy / Downtown / East Plano)&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Richardson (Telecom Corridor)&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Far North Dallas&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Denton&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Unsure - Need Assistance&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Duncanville&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Mansfield&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Cedar Hill&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;DeSoto&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Redbird&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Red Oak&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Waxahachie&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Not Sure - Need Assistance&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Lake Highlands&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Lakewood / White Rock&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Garland&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;I-635 / 30 Corridor&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Mesquite&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Rowlett&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Rockwall&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Fourney&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Balch Springs&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Not Sure Yet - Need Help&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Las Colinas / Irving&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;North MacArthuer Blvd&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Kessler Park / Stevens Park&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Trinity Groves / Sylvan 30&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Bishop Arts / Oak Cliff (West)&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Singleton Blvd&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Cockrell Hill / Westmoreland&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Grand Prairie&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Irving&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;HEB Cities&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Not Sure Yet - Need Help&quot;}]}'>
  <label for="backgroundIssues">My background issues are: <span class="req">*</span></label>
  <select name="backgroundIssues" id="backgroundIssues" required>
- <option value="">- Select -</option>
+ <option value="" disabled selected>- Select -</option>
  <option value="I&#x27;m clean as a whistle!">I&#x27;m clean as a whistle!</option>
  <option value="Felony">Felony</option>
  <option value="Misdemeanor">Misdemeanor</option>
@@ -339,7 +243,7 @@
  <div class="field" id="field_felonyDetails" data-cond='{&quot;logic&quot;: &quot;any&quot;, &quot;action&quot;: &quot;show&quot;, &quot;rules&quot;: [{&quot;f&quot;: &quot;backgroundIssues&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Felony&quot;}]}'>
  <label for="felonyDetails">My felony is: <span class="req">*</span></label>
  <select name="felonyDetails" id="felonyDetails" required>
- <option value="">- Select -</option>
+ <option value="" disabled selected>- Select -</option>
  <option value="0-7 years ago">0-7 years ago</option>
  <option value="7+ years old">7+ years old</option>
  <option value="Deferred adjucation">Deferred adjucation</option>
@@ -349,7 +253,7 @@
  <div class="field" id="field_misdemeanorDetails" data-cond='{&quot;logic&quot;: &quot;any&quot;, &quot;action&quot;: &quot;show&quot;, &quot;rules&quot;: [{&quot;f&quot;: &quot;backgroundIssues&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Misdemeanor&quot;}]}'>
  <label for="misdemeanorDetails">My misdemeanor is: <span class="req">*</span></label>
  <select name="misdemeanorDetails" id="misdemeanorDetails" required>
- <option value="">- Select -</option>
+ <option value="" disabled selected>- Select -</option>
  <option value="0 - 7 years ago">0 - 7 years ago</option>
  <option value="7+ years ago">7+ years ago</option>
  <option value="DUI/DWI">DUI/DWI</option>
@@ -358,7 +262,7 @@
  <div class="field" id="field_creditScore" data-cond='{&quot;logic&quot;: &quot;any&quot;, &quot;action&quot;: &quot;show&quot;, &quot;rules&quot;: [{&quot;f&quot;: &quot;dallasArea&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;I&#x27;m really not sure (I would like to explore my options)&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Downtown Dallas&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Deep Ellum&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Uptown&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Victory Park / Design District&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Near Love Field&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Near Medical Center&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Knox / Henderson&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Greenville&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Oak Lawn&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Medical District / Parkland&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Bishop Arts / North Oak Cliff&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Kessler&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Not Sure - Need Help&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Addison&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Farmers Branch&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Carrollton&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Las Colinas&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Coppell&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Near DFW Airport&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Lewisville&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;The Colony (Grandscape / TopGolf)&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Frisco (Legacy West / PGA / Stonebriar)&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Prosper&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;McKinney&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Allen&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Plano (Legacy / Downtown / East Plano)&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Richardson (Telecom Corridor)&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Far North Dallas&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Denton&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Unsure - Need Assistance&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Duncanville&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Mansfield&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Cedar Hill&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;DeSoto&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Redbird&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Red Oak&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Waxahachie&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Not Sure - Need Assistance&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Lake Highlands&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Lakewood / White Rock&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Garland&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;I-635 / 30 Corridor&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Mesquite&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Rowlett&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Rockwall&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Fourney&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Balch Springs&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Not Sure Yet - Need Help&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Las Colinas / Irving&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;North MacArthuer Blvd&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Kessler Park / Stevens Park&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Trinity Groves / Sylvan 30&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Bishop Arts / Oak Cliff (West)&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Singleton Blvd&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Cockrell Hill / Westmoreland&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Grand Prairie&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Irving&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;HEB Cities&quot;}, {&quot;f&quot;: &quot;neighborhoods&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Not Sure Yet - Need Help&quot;}]}'>
  <label for="creditScore">My credit history is: <span class="req">*</span></label>
  <select name="creditScore" id="creditScore" required>
- <option value="">- Select -</option>
+ <option value="" disabled selected>- Select -</option>
  <option value="Best (600 or above)">Best (600 or above)</option>
  <option value="Better (550 or above)">Better (550 or above)</option>
  <option value="Good (550 or below)">Good (550 or below)</option>
@@ -373,298 +277,403 @@
  <div class="field" id="field_income" data-cond='{&quot;logic&quot;: &quot;any&quot;, &quot;action&quot;: &quot;show&quot;, &quot;rules&quot;: [{&quot;f&quot;: &quot;creditScore&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Best (600 or above)&quot;}, {&quot;f&quot;: &quot;creditScore&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Better (550 or above)&quot;}, {&quot;f&quot;: &quot;creditScore&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;Good (550 or below)&quot;}, {&quot;f&quot;: &quot;creditScore&quot;, &quot;op&quot;: &quot;is&quot;, &quot;v&quot;: &quot;I don&#x27;t have credit&quot;}]}'>
  <label for="income">MONTHLY Income (before taxes are taken out): <span class="req">*</span></label>
  <input type="number" name="income" id="income" min="0" placeholder="$" required>
- <p class="field-desc">(Add up everyone who will apply. Ex: 6000) Most places require 2-3x the rent per month. If you make less, you&#x27;ll need a cosigner or guarantor.</p>
+ <p class="field-desc">(Add up everyone who will apply. Ex: 6000) Most places require 3x the rent per month. Some accept 2.5x or less with a cosigner, a guarantor or a larger deposit.</p>
  </div>
  <div class="field" id="field_name" data-cond='{&quot;logic&quot;: &quot;all&quot;, &quot;action&quot;: &quot;show&quot;, &quot;rules&quot;: [{&quot;f&quot;: &quot;income&quot;, &quot;op&quot;: &quot;&gt;&quot;, &quot;v&quot;: &quot;1&quot;}]}'>
  <label>Name: <span class="req">*</span></label>
  <div class="name-row">
- <input type="text" name="firstName" aria-label="First name" placeholder="First" required autocomplete="given-name">
- <input type="text" name="lastName" aria-label="Last name" placeholder="Last" required autocomplete="family-name">
+ <input type="text" name="firstName" aria-label="First name" placeholder="First" required autocomplete="given-name" enterkeyhint="next">
+ <input type="text" name="lastName" aria-label="Last name" placeholder="Last" required autocomplete="family-name" enterkeyhint="next">
  </div>
  </div>
  <div class="field" id="field_phone" data-cond='{&quot;logic&quot;: &quot;all&quot;, &quot;action&quot;: &quot;show&quot;, &quot;rules&quot;: [{&quot;f&quot;: &quot;income&quot;, &quot;op&quot;: &quot;&gt;&quot;, &quot;v&quot;: &quot;1&quot;}]}'>
  <label for="phone">Phone: <span class="req">*</span></label>
- <input type="tel" name="phone" id="phone" placeholder="###-###-####" required autocomplete="tel">
+ <input type="tel" name="phone" id="phone" placeholder="###-###-####" required autocomplete="tel" enterkeyhint="next">
  </div>
  <div class="field" id="field_email" data-cond='{&quot;logic&quot;: &quot;all&quot;, &quot;action&quot;: &quot;show&quot;, &quot;rules&quot;: [{&quot;f&quot;: &quot;income&quot;, &quot;op&quot;: &quot;&gt;&quot;, &quot;v&quot;: &quot;1&quot;}]}'>
  <label for="email">Email: <span class="req">*</span></label>
- <input type="email" name="email" id="email" placeholder="We never spam." required autocomplete="email">
+ <input type="email" name="email" id="email" placeholder="We never spam." required autocomplete="email" enterkeyhint="done">
  </div>
  <div class="field" id="field_consent" data-cond='{&quot;logic&quot;: &quot;all&quot;, &quot;action&quot;: &quot;show&quot;, &quot;rules&quot;: [{&quot;f&quot;: &quot;income&quot;, &quot;op&quot;: &quot;&gt;&quot;, &quot;v&quot;: &quot;1&quot;}]}'>
  <label style="display:block;font-weight:700;margin-bottom:4px">Consent: <span class="req">*</span></label>
  <label class="cb-label consent-label" style="font-weight:700">
- <input type="checkbox" name="consent" value="1" required><input type="hidden" name="consentText" value="Dallas Second Chance Team and its agents may contact me at the number provided about my apartment search and related services, including by automated call, text, or artificial or prerecorded voice. Msg frequency varies. Msg &amp; data rates may apply. Reply STOP to opt out. I have read and agree to the Terms &amp; Conditions and Privacy Policy."><input type="hidden" name="consentTimestamp" value="">
+ <input type="checkbox" name="consent" value="1" required><input type="hidden" name="consentText" value="Dallas Apartment Locator Team and its agents may contact me at the number provided about my apartment search and related services, including by automated call, text, or artificial or prerecorded voice. Msg frequency varies. Msg &amp; data rates may apply. Reply STOP to opt out. I have read and agree to the Terms &amp; Conditions and Privacy Policy."><input type="hidden" name="consentTimestamp" value="">
  <span>I agree</span>
  </label>
- <p class="consent-text">Dallas Second Chance Team and its agents may contact me at the number provided about my apartment search and related services, including by automated call, text, or artificial or prerecorded voice. Msg frequency varies. Msg &amp; data rates may apply. Reply STOP to opt out. I have read and agree to the <a href="https://dallasapartmentreviews.com/terms/" rel="nofollow">Terms &amp; Conditions</a> and <a href="https://dallasapartmentreviews.com/privacy/" rel="nofollow">Privacy Policy</a>.</p>
+ <p class="consent-text">Dallas Apartment Locator Team and its agents may contact me at the number provided about my apartment search and related services, including by automated call, text, or artificial or prerecorded voice. Msg frequency varies. Msg &amp; data rates may apply. Reply STOP to opt out. I have read and agree to the <a href="https://dallasapartmentreviews.com/terms/" rel="nofollow">Terms &amp; Conditions</a> and <a href="https://dallasapartmentreviews.com/privacy/" rel="nofollow">Privacy Policy</a>.</p>
  </div>
 
- <div class="msg-error" id="formError"></div>
- <button type="submit" class="btn-submit" id="submitBtn">Get My Free Apartment List &rarr;</button>
+ <div class="msg-error" id="formError" role="alert"></div>
+ <button data-cta="form-submit" data-cta-page="form" type="submit" class="btn-submit" id="submitBtn">Send My Situation</button>
  </form>
-      </div>
-      <p class="mt-3 text-center text-[13px] text-on-surface-variant">
-        Free to you &mdash; communities pay locator fees, not renters. No catch.<br>
-        Hit submit and watch your phone: our first text usually lands within minutes.</p>
-    </div>
-  </div>
-</section>
+ <div class="lg:hidden" style="margin-top:18px;padding:12px 14px;background:#f0fdf4;border-radius:8px;font-size:13px;color:#15803d;line-height:1.5;">
+ <strong style="display:block;margin-bottom:2px;">100% free to renters.</strong>
+ We check your situation against research we have already done, confirm anything that looks stale, and send a custom list. Your info stays between us and the communities you tour.
+ </div>
 
-<section class="border-t border-outline bg-surface-alt">
-  <div class="mx-auto max-w-3xl px-4 py-10">
-    <h2 class="heading-font text-2xl text-on-surface">Already reading reviews on a specific place? Good &mdash; that's where we come in.</h2>
-    <p class="mt-2 text-sm text-on-surface-variant">We're the team behind
-      <a class="font-semibold text-primary-600 hover:underline" href="https://dallasapartmentreviews.com/">DallasApartmentReviews.com</a>.
-      We've reviewed 1,022 Dallas communities and only 196 made our list. We do this every day &mdash;
-      and honestly, the review pages only tell you half the story. One more thing worth knowing: nothing on any list we send is a paid placement &mdash; same rule as our rankings.</p>
-    <div class="mt-6 grid gap-4"><div class="rounded-card border border-outline bg-surface-container p-5"><h3 class="heading-font text-base text-on-surface">Our honest take on the one you're eyeing</h3><p class="mt-2 text-sm text-on-surface-variant">Reviews are messy. A place can have fifty five-stars from move-in week and one brutal one-star from year two. We read these all day, so we can usually tell you whether a rough patch was a management change that got fixed or a pattern that didn't. Tell us where you're looking and we'll give it to you straight.</p></div><div class="rounded-card border border-outline bg-surface-container p-5"><h3 class="heading-font text-base text-on-surface">Prices from this week, not last month</h3><p class="mt-2 text-sm text-on-surface-variant">The big listing sites lag. By the time you tour, the quote has changed and the special is gone. We confirm pricing and current move-in specials with leasing offices before your list goes out.</p></div><div class="rounded-card border border-outline bg-surface-container p-5"><h3 class="heading-font text-base text-on-surface">A list built around your approval odds</h3><p class="mt-2 text-sm text-on-surface-variant">Every community screens differently — credit, rental history, income. We keep track of who tends to be flexible about what, so your list leans toward places where your situation has a real shot. Application fees are $50 to $85 a pop and non-refundable; we'd rather you not gamble them.</p></div></div>
-  </div>
-</section>
-<section class="border-t border-outline bg-surface-container">
-  <div class="mx-auto max-w-3xl px-4 py-10">
-    <h2 class="heading-font text-2xl text-on-surface">How it works</h2>
-    <ol class="mt-6 space-y-6"><li class="flex gap-4"><span class="step-num">1</span><div><h3 class="heading-font text-lg text-on-surface">Our text lands in minutes</h3><p class="mt-1 text-sm text-on-surface-variant">A real locator confirms we have your request and asks anything that sharpens the match. Prefer text-only contact? Just say so in your reply.</p></div></li><li class="flex gap-4"><span class="step-num">2</span><div><h3 class="heading-font text-lg text-on-surface">We read it, then we make calls</h3><p class="mt-1 text-sm text-on-surface-variant">A person weighs your budget, timeline, lifestyle, and dealbreakers — then checks with leasing offices on what they're actually quoting right now. Websites lag. The office phone doesn't.</p></div></li><li class="flex gap-4"><span class="step-num">3</span><div><h3 class="heading-font text-lg text-on-surface">Your list lands — and we stay on it</h3><p class="mt-1 text-sm text-on-surface-variant">Usually within 24–48 hours on weekdays: prices, specials, and our notes on each community. Pick favorites and we set up tours, chase the deals, and back your application through move-in.</p></div></li></ol>
-  </div>
-</section>
-<section class="border-t border-outline">
-  <div class="mx-auto max-w-3xl px-4 py-12">
-    <h2 class="heading-font text-2xl text-on-surface">Common questions</h2>
-    <dl class="mt-6 space-y-5 text-sm"><div><dt class="font-medium text-on-surface">Can I ask about a specific community?</dt><dd class="mt-1 text-on-surface-variant">Yes, please do. Put the name in the “My top priorities” box. We'll include what we know about it, what it's actually quoting right now, and how it stacks up against its neighbors.</dd></div><div><dt class="font-medium text-on-surface">Does it cost anything?</dt><dd class="mt-1 text-on-surface-variant">No. Communities pay locator fees when you lease — the same way they pay listing sites to advertise. You never get a bill from us.</dd></div><div><dt class="font-medium text-on-surface">How fast do I get my list?</dt><dd class="mt-1 text-on-surface-variant">Usually 24–48 hours on weekdays. If your timeline is tight, say so in the form and we'll hustle.</dd></div><div><dt class="font-medium text-on-surface">Why do you ask about credit and rental history?</dt><dd class="mt-1 text-on-surface-variant">Because it changes which communities make sense for you. Every property screens differently, and the honest version of your situation gets you a list that holds up at application time — not one that just looks nice.</dd></div><div><dt class="font-medium text-on-surface">What happens after I submit?</dt><dd class="mt-1 text-on-surface-variant">Watch your phone — our first text usually lands within minutes. From there a locator builds your list, and once it arrives we keep going: tours, deal-chasing, and application support through move-in.</dd></div></dl>
-    <div class="mt-8 text-center">
-      <a href="#apartment-form" class="inline-block rounded-btn px-8 py-3.5 text-base font-bold shadow-card"
-         style="background:rgb(var(--lp-accent-500));color:rgb(var(--lp-on-accent))">Get My Free Apartment List &rarr;</a>
-      <p class="mt-2 text-[13px] text-on-surface-variant">Free &middot; no obligation &middot; takes about 60 seconds</p>
-    </div>
-  </div>
-</section>
-</main>
-<footer class="mt-16 border-t border-outline bg-surface-container"> <div class="mx-auto max-w-6xl px-4 pt-14 pb-8"> <div class="grid gap-12 md:grid-cols-12"> <!-- Brand --> <div class="md:col-span-4"> <img src="/images/logo.png" alt="Dallas Apartment Reviews Directory" class="mb-3 h-10 w-auto" loading="lazy"> <p class="max-w-sm text-sm text-on-surface-variant">Reviews by licensed apartment locators, not advertisers.</p> <p class="mt-4 text-xs text-on-surface-variant">
-Published by <a class="hover:text-primary-600" href="https://dallasapartmentreviews.com" rel="publisher">DallasApartmentReviews.com</a>  &middot; edited by Dallas Apartment Locating Team </p>  </div> <!-- Link columns --> <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 md:col-span-8"> <div class="flex flex-col gap-3"> <span class="font-heading font-semibold text-on-surface">Browse</span> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/browse/">Search &amp; map</a>  </div> <div class="flex flex-col gap-3"> <span class="font-heading font-semibold text-on-surface">Rankings &amp; guides</span>  <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/guide/">Advice</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/compare/">Compare</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/tools/">Utilities</a> </div> <div class="flex flex-col gap-3"> <span class="font-heading font-semibold text-on-surface">About</span> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="#apartment-form">Start Your Search</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/about/">About</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/how-we-rank/">How We Rank</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/listing-policy/">Corrections &amp; removals</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/privacy/">Privacy</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/terms/">Terms</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/advertise/">Advertise</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/contact/">Contact</a> </div> </div> </div> <!-- Bottom bar: data disclosure (E1) + copyright --> <div class="mt-12 flex flex-col gap-3 border-t border-outline-variant pt-6 text-xs text-on-surface-variant sm:flex-row sm:items-center sm:justify-between"> <p class="max-w-3xl"> Our ratings and review summaries come from public Google reviews. We link each listing to Google and do not republish the review text itself. Last updated 2026-07-23.
-</p> <p class="shrink-0">&copy; 2026 DallasApartmentReviews.com</p> </div> </div> </footer>
-<script>
-(function() {
- const form = document.getElementById('aptForm');
- const allFields = document.querySelectorAll('.field[data-cond]');
- 
- const condMap = [];
- allFields.forEach(el => {
- try {
- const c = JSON.parse(el.dataset.cond);
- condMap.push({ el, cond: c });
- } catch(e) {}
- });
+ <div class="msg-success" id="formSuccess">
+ <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#16a34a" style="margin:0 auto 8px;display:block;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+ <strong style="font-size:18px;display:block;margin-bottom:4px;">Thanks, we've got your request.</strong>
+ Thanks for telling us your situation. We'll text you in a few minutes to confirm your DFW areas, budget and rental history. Just reply with questions or anything you'd like to change.<br><br>We'll text your DFW list. Tap the heart ♡ on the apartments you're interested in, and we'll arrange tours. We recommend visiting in person because photos don't always show the full picture. We'll help you through move-in.<br><br>Weekend lists are usually researched Monday. Friday requests may get a list Saturday; otherwise, we aim for Monday.
+ </div>
+</div>
 
- function getFieldValues(fieldId) {
- const fid = String(fieldId);
- // Select / text / number - look up by name directly
- const sel = form.querySelector('[name="' + fid + '"]');
- if (sel && (sel.tagName === 'SELECT' || sel.tagName === 'INPUT' || sel.tagName === 'TEXTAREA')) {
- return [sel.value];
- }
- // Checkboxes - look up by name="neighborhoods[]" or similar
- const cbs = form.querySelectorAll('[name="' + fid + '[]"]');
- if (cbs.length) {
- const vals = [];
- cbs.forEach(cb => { if (cb.checked) vals.push(cb.value); });
- return vals;
- }
- return [''];
- }
+<script>(function () {
+  const form = document.getElementById("aptForm");
+  const allFields = document.querySelectorAll(".field[data-cond]");
 
- function evalRule(rule) {
- const vals = getFieldValues(rule.f);
- const v = rule.v;
- const op = rule.op;
- if (op === 'is') return vals.includes(v);
- if (op === 'isnot') return !vals.includes(v);
- if (op === '>') return (parseFloat(vals[0]) || 0) > (parseFloat(v) || 0);
- if (op === '<') return (parseFloat(vals[0]) || 0) < (parseFloat(v) || 0);
- return false;
- }
+  const condMap = [];
+  allFields.forEach((el) => {
+    try {
+      const c = JSON.parse(el.dataset.cond);
+      condMap.push({ el, cond: c });
+    } catch (e) {}
+  });
 
- function evalConditions() {
- condMap.forEach(({ el, cond }) => {
- let show;
- if (cond.logic === 'all') {
- show = cond.rules.every(evalRule);
- } else {
- show = cond.rules.some(evalRule);
- }
- if (cond.action === 'hide') show = !show;
- 
- if (show) {
- el.classList.remove('hidden');
- } else {
- el.classList.add('hidden');
- // Clear hidden fields
- el.querySelectorAll('select').forEach(s => s.value = '');
- el.querySelectorAll('input[type="checkbox"]').forEach(c => c.checked = false);
- el.querySelectorAll('input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="date"], textarea').forEach(i => i.value = '');
- }
- });
- }
+  function getFieldValues(fieldId) {
+    const fid = String(fieldId);
+    // Select / text / number - look up by name directly
+    const sel = form.querySelector('[name="' + fid + '"]');
+    if (
+      sel &&
+      (sel.tagName === "SELECT" ||
+        sel.tagName === "INPUT" ||
+        sel.tagName === "TEXTAREA")
+    ) {
+      return [sel.value];
+    }
+    // Checkboxes - look up by name="neighborhoods[]" or similar
+    const cbs = form.querySelectorAll('[name="' + fid + '[]"]');
+    if (cbs.length) {
+      const vals = [];
+      cbs.forEach((cb) => {
+        if (cb.checked) vals.push(cb.value);
+      });
+      return vals;
+    }
+    return [""];
+  }
 
- // Initial state
- allFields.forEach(el => el.classList.add('hidden'));
+  function evalRule(rule) {
+    const vals = getFieldValues(rule.f);
+    const v = rule.v;
+    const op = rule.op;
+    if (op === "is") return vals.includes(v);
+    if (op === "isnot") return !vals.includes(v);
+    if (op === ">") return (parseFloat(vals[0]) || 0) > (parseFloat(v) || 0);
+    if (op === "<") return (parseFloat(vals[0]) || 0) < (parseFloat(v) || 0);
+    return false;
+  }
 
- form.addEventListener('change', evalConditions);
- form.addEventListener('input', evalConditions);
+  function evalConditions() {
+    condMap.forEach(({ el, cond }) => {
+      let show;
+      if (cond.logic === "all") {
+        show = cond.rules.every(evalRule);
+      } else {
+        show = cond.rules.some(evalRule);
+      }
+      if (cond.action === "hide") show = !show;
 
- // Submit
- form.addEventListener('submit', async function(e) {
- e.preventDefault();
- 
- // Clear previous errors
- form.querySelectorAll('.field-error').forEach(el => el.classList.remove('field-error'));
- document.getElementById('formError').style.display = 'none';
+      if (show) {
+        el.classList.remove("hidden");
+      } else {
+        el.classList.add("hidden");
+        // Clear hidden fields
+        el.querySelectorAll("select").forEach((s) => (s.value = ""));
+        el.querySelectorAll('input[type="checkbox"]').forEach(
+          (c) => (c.checked = false),
+        );
+        el.querySelectorAll(
+          'input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="date"], textarea',
+        ).forEach((i) => (i.value = ""));
+      }
+    });
+  }
 
- // Validate visible required fields
- let valid = true;
- let firstBad = null;
- form.querySelectorAll('.field:not(.hidden) [required]').forEach(inp => {
- if (inp.type === 'checkbox') return; // handled per group below
- if (!inp.value || inp.value.trim() === '') {
- inp.classList.add('field-error');
- valid = false;
- if (!firstBad) firstBad = inp;
- }
- });
+  // Initial state
+  allFields.forEach((el) => el.classList.add("hidden"));
 
- // Required checkbox groups. An UNCHECKED checkbox still reports a
- // non-empty .value ("Addison"), so the loop above can never see one.
- // Count :checked per group instead. Without this a visitor can answer
- // every dropdown, leave the neighbourhood boxes untouched, and submit -
- // which leaves rentalIssues and everything after it hidden, including
- // consent, and sends a lead with no name, phone or email.
- form.querySelectorAll('.field:not(.hidden)').forEach(fld => {
- var boxes = fld.querySelectorAll('input[type="checkbox"]');
- if (!boxes.length) return;
- if (!fld.querySelector('label .req')) return; // not required
- if (fld.querySelector('input[type="checkbox"]:checked')) return;
- fld.classList.add('field-error');
- valid = false;
- if (!firstBad) firstBad = boxes[0];
- });
+  form.addEventListener("change", evalConditions);
+  const clearNote = (e) => {
+    const fld = e.target.closest && e.target.closest(".field");
+    if (!fld || !fld.querySelector(".inline-err, .field-error, [aria-invalid]") && !fld.classList.contains("field-error")) return;
+    fld.querySelectorAll(".inline-err").forEach((n) => n.remove());
+    fld.classList.remove("field-error");
+    e.target.classList.remove("field-error");
+    if (e.target.tagName !== "SELECT") e.target.removeAttribute("aria-invalid");
+    document.getElementById("formError").style.display = "none";
+  };
+  form.addEventListener("change", clearNote);
+  form.addEventListener("input", clearNote);
+  form.addEventListener("input", evalConditions);
 
- // Consent: checked unconditionally, on purpose. Gating this on whether the
- // consent field happens to be visible makes a TCPA record depend on four
- // conditional rules all holding. It must never be bypassable.
- const consent = form.querySelector('input[name="consent"]');
- const consentHidden = consent && consent.closest('.field')
- && consent.closest('.field').classList.contains('hidden');
- if (consent && !consent.checked) {
- valid = false;
- var cf = consent.closest('.field');
- if (cf) cf.classList.add('field-error');
- if (!firstBad) firstBad = consentHidden ? null : consent;
- }
+  // Submit
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    if(document.getElementById("submitBtn").disabled)return;
 
- if (!valid) {
- document.getElementById('formError').textContent = (firstBad === consent)
- ? 'Please read the consent and check the ‘I agree’ box.'
- : (firstBad
- ? 'Please fill in all required fields.'
- : 'Please answer the remaining questions below before submitting.');
- document.getElementById('formError').style.display = 'block';
- if (firstBad) firstBad.scrollIntoView({ behavior: 'smooth', block: 'center' });
- return;
- }
+    form.querySelectorAll('[aria-invalid]').forEach(el=>el.removeAttribute('aria-invalid'));
+    // Clear previous errors
+    form
+      .querySelectorAll(".field-error")
+      .forEach((el) => el.classList.remove("field-error"));
+    form.querySelectorAll(".inline-err").forEach((el) => el.remove());
+    document.getElementById("formError").style.display = "none";
 
- const btn = document.getElementById('submitBtn');
- btn.disabled = true;
- btn.textContent = 'Sending...';
- 
- // Build structured JSON payload
- var g = function(n) { var el = form.querySelector('[name="'+n+'"]'); return el && !el.closest('.field.hidden') ? el.value : ''; };
- var cbs = form.querySelectorAll('.field:not(.hidden) [name="neighborhoods[]"]:checked');
- var nbh = []; cbs.forEach(function(c){ nbh.push(c.value); });
+    // Validate visible required fields
+    let valid = true;
+    let firstBad = null;
+    form.querySelectorAll(".field:not(.hidden) input,.field:not(.hidden) select,.field:not(.hidden) textarea").forEach((inp) => {
+      if (inp.type === "checkbox") return; // handled per group below
+      if(inp.disabled||inp.type==='hidden'||inp.type==='checkbox')return;
+      const badPhone = inp.name === "phone" && inp.value.trim() && inp.value.replace(/\D/g, "").replace(/^1(?=\d{10}$)/, "").length !== 10;
+      if ((inp.required&&!inp.value.trim()) || (inp.value&&!inp.validity.valid) || badPhone) {
+        inp.classList.add("field-error");
+        inp.setAttribute("aria-invalid","true");
+        valid = false;
+        if (!firstBad) firstBad = inp;
+      }
+    });
 
- var payload = {
- contact: { firstName: g('firstName'), lastName: g('lastName'), email: g('email'), phone: g('phone') },
- financial: { income: g('income'), creditScore: g('creditScore') },
- rentalHistory: { rentalIssues: g('rentalIssues'), brokenLease: g('brokenLease'), brokenLeaseDebt: g('brokenLeaseDebt'), eviction: g('eviction'), evictionDebt: g('evictionDebt'), propertyDebt: g('propertyDebt') },
- background: { backgroundIssues: g('backgroundIssues'), felonyDetails: g('felonyDetails'), misdemeanorDetails: g('misdemeanorDetails') },
- preferences: { moveDate: g('moveDate'), bedrooms: g('bedrooms'), budget: g('budget'), dallasArea: g('dallasArea'), topPriorities: g('topPriorities'), neighborhoods: nbh },
- formMetadata: { formId: 'dallas-apartment-search', formTitle: 'Get Your Free Second Chance Apartment List in DFW', sourceUrl: window.location.href, referredBy: g('referredBy'), city: g('city'), consent: form.querySelector('[name="consent"]') ? (form.querySelector('[name="consent"]').checked ? 'yes' : 'no') : '',
-        consentText: (form.querySelector('[name="consentText"]') || {}).value || '',
-        consentTimestamp: (form.querySelector('[name="consentTimestamp"]') || {}).value || '' }
- };
+    // Required checkbox groups. An UNCHECKED checkbox still reports a
+    // non-empty .value ("Addison"), so the loop above can never see one.
+    // Count :checked per group instead. Without this a visitor can answer
+    // every dropdown, leave the neighbourhood boxes untouched, and submit -
+    // which leaves rentalIssues and everything after it hidden, including
+    // consent, and sends a lead with no name, phone or email.
+    form.querySelectorAll(".field:not(.hidden)").forEach((fld) => {
+      var boxes = fld.querySelectorAll('input[type="checkbox"]');
+      if (!boxes.length) return;
+      if (!fld.querySelector("label .req")) return; // not required
+      if (fld.querySelector('input[type="checkbox"]:checked')) return;
+      fld.classList.add("field-error");
+      valid = false;
+      if (!firstBad) firstBad = boxes[0];
+    });
 
- try {
- var res = await fetch(form.action, {
- method: 'POST',
- headers: { 'Content-Type': 'application/json' },
- body: JSON.stringify(payload)
- });
- if (res.ok || res.status === 0) {
- window.location.href='/thank-you/';
- } else {
- throw new Error('Server returned ' + res.status);
- }
- } catch(err) {
- window.location.href='/thank-you/';
- }
- });
+    // Consent: checked unconditionally, on purpose. Gating this on whether the
+    // consent field happens to be visible makes a TCPA record depend on four
+    // conditional rules all holding. It must never be bypassable.
+    const consent = form.querySelector('input[name="consent"]');
+    const consentHidden =
+      consent &&
+      consent.closest(".field") &&
+      consent.closest(".field").classList.contains("hidden");
+    if (consent && !consent.checked) {
+      valid = false;
+      var cf = consent.closest(".field");
+      if (cf) cf.classList.add("field-error");
+      if (!firstBad) firstBad = consentHidden ? null : consent;
+    }
+
+    if (!valid) {
+      const errText = (el) =>
+        !el ? "Please answer the remaining questions below before submitting."
+        : el === consent ? "Please read the consent and check the ‘I agree’ box."
+        : el.type === "checkbox" ? "Please pick at least one neighborhood."
+        : el.type === "date" ? "Please pick the date you need to move."
+        : el.name === "income" ? "Please enter your monthly income before taxes, as a number (for example 4500)."
+        : el.name === "firstName" || el.name === "lastName" ? "Please enter your first and last name."
+        : el.name === "phone" ? "Please enter a 10 digit phone number."
+        : el.name === "email" ? "Please enter a valid email, like name@example.com."
+        : "Please answer the highlighted question.";
+      // One short note under each flagged question, tied to its control.
+      const noted = new Set();
+      form.querySelectorAll(".field:not(.hidden) [aria-invalid=true], .field.field-error:not(.hidden)").forEach((el) => {
+        const fld = el.closest(".field");
+        if (!fld || noted.has(fld)) return;
+        noted.add(fld);
+        const ctl = el.matches(".field") ? el.querySelector("input:not([type=hidden])") : el;
+        if (!ctl || ctl.tagName === "SELECT") return; // dropdowns get their note from sca-dropdown-validation
+        const note = document.createElement("p");
+        note.className = "inline-err";
+        note.id = "err-" + fld.id;
+        note.textContent = errText(ctl === consent ? consent : ctl);
+        const anchor = fld.querySelector(".cb-group, .name-row, .consent-label") || ctl;
+        anchor.insertAdjacentElement("afterend", note);
+        fld.querySelectorAll("input:not([type=hidden])").forEach((i) => i.setAttribute("aria-describedby", ((i.getAttribute("aria-describedby") || "").replace(note.id, "") + " " + note.id).trim()));
+      });
+      document.getElementById("formError").textContent = errText(firstBad);
+      document.getElementById("formError").style.display = "block";
+      if (firstBad) {
+        firstBad.focus({ preventScroll: true });
+        firstBad.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+      return;
+    }
+
+    const btn = document.getElementById("submitBtn");
+    const buttonLabel = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = "Sending...";
+
+    // Build structured JSON payload
+    var g = function (n) {
+      var el = form.querySelector('[name="' + n + '"]');
+      return el && !el.closest(".field.hidden") ? el.value : "";
+    };
+    var cbs = form.querySelectorAll(
+      '.field:not(.hidden) [name="neighborhoods[]"]:checked',
+    );
+    var nbh = [];
+    cbs.forEach(function (c) {
+      nbh.push(c.value);
+    });
+
+    var payload = {
+      contact: {
+        firstName: g("firstName"),
+        lastName: g("lastName"),
+        email: g("email"),
+        phone: g("phone"),
+      },
+      financial: { income: g("income"), creditScore: g("creditScore") },
+      rentalHistory: {
+        rentalIssues: g("rentalIssues"),
+        brokenLease: g("brokenLease"),
+        brokenLeaseDebt: g("brokenLeaseDebt"),
+        eviction: g("eviction"),
+        evictionDebt: g("evictionDebt"),
+        propertyDebt: g("propertyDebt"),
+      },
+      background: {
+        backgroundIssues: g("backgroundIssues"),
+        felonyDetails: g("felonyDetails"),
+        misdemeanorDetails: g("misdemeanorDetails"),
+      },
+      preferences: {
+        moveDate: g("moveDate"),
+        bedrooms: g("bedrooms"),
+        budget: g("budget"),
+        dallasArea: g("dallasArea"),
+        topPriorities: g("topPriorities"),
+        neighborhoods: nbh,
+      },
+      formMetadata: {
+        formId: "dar-secure-form",
+        formTitle: "Dallas Apartment Reviews - Get Started",
+        sourceUrl: window.location.href,
+        referredBy: g("referredBy"),
+        city: g("city"),
+        consent: form.querySelector('[name="consent"]')
+          ? form.querySelector('[name="consent"]').checked
+            ? "yes"
+            : "no"
+          : "",
+        consentText:
+          (form.querySelector('[name="consentText"]') || {}).value || "",
+        consentTimestamp:
+          (form.querySelector('[name="consentTimestamp"]') || {}).value || "",
+      },
+    };
+
+    const controller = new AbortController();const timer=setTimeout(()=>controller.abort(),30000);
+    try {
+      var res = await fetch(form.action, {
+        signal: controller.signal,
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      clearTimeout(timer);
+      if (res.ok) {
+        window.location.href = "/thank-you/";
+      } else {
+        throw new Error("Server returned " + res.status);
+      }
+    } catch (err) {
+      clearTimeout(timer);btn.disabled=false;btn.textContent=buttonLabel;
+      const error=document.getElementById("formError");error.textContent="Your request was not sent. Your answers are still here. Please try again or call us.";error.style.display="block";error.scrollIntoView({block:"center"});
+    }
+  });
 })();
-</script>
-<script>
-(function () {
- var FS_KEY = "2f17fb57167ca0a1f178f43a3ddaa82b";
- var SUBJECT = "Guest Card - Dallas Apartment Reviews Referred By: the Dallas Apartment Locating Team - Apartment Locators with Spirit Real Estate";
- var HOOK = "n8n.dentals.targetdial.co";
- if (!FS_KEY || !window.fetch) return;
+</script></section><div data-intake-footer-spacer aria-hidden="true" style="height:clamp(360px,60vh,720px);background:transparent"></div></main>  <footer class="mt-16 border-t border-outline bg-surface-container"> <div class="mx-auto max-w-6xl px-4 pt-14 pb-8"> <div class="grid gap-12 md:grid-cols-12">  <div class="md:col-span-4"> <img src="/images/brand/logo.png" alt="Dallas Apartment Reviews Directory" class="mb-3 h-10 w-auto" loading="lazy"> <p class="max-w-sm text-sm text-on-surface-variant">Reviews by licensed apartment locators, not advertisers.</p> <p class="mt-4 text-xs text-on-surface-variant">
+Published by <a class="hover:text-primary-600" href="https://dallasapartmentreviews.com" rel="publisher">DallasApartmentReviews.com</a>  &middot; edited by Dallas Apartment Locator Team </p>  </div>  <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 md:col-span-8"> <div class="flex flex-col gap-3"> <span class="font-heading font-semibold text-on-surface">Browse</span> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/browse/">Search &amp; map</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/category/affordable-value/">Affordable &amp; Budget-Friendly</a><a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/category/corporate-furnished/">Corporate &amp; Furnished Housing</a><a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/category/luxury-high-rise/">Luxury High-Rise Living</a><a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/category/pet-friendly/">Pet-Friendly Communities</a><a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/category/senior-55-plus/">Senior / 55+ Communities</a> </div> <div class="flex flex-col gap-3"> <span class="font-heading font-semibold text-on-surface">Rankings &amp; guides</span>  <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/guide/">Advice</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/compare/">Compare</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/tools/">Utilities</a> </div> <div class="flex flex-col gap-3"> <span class="font-heading font-semibold text-on-surface">About</span> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="/">Start Your Search</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/about/">About</a>  <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/how-we-rank/">How We Rank</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/listing-policy/">Corrections &amp; removals</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/privacy/">Privacy</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/terms/">Terms</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/advertise/">Advertise</a> <a class="text-on-surface-variant hover:text-primary-600 transition-colors" href="https://dallasapartmentreviews.com/contact/">Contact</a> </div> </div> </div>  <div class="mt-12 flex flex-col gap-3 border-t border-outline-variant pt-6 text-xs text-on-surface-variant sm:flex-row sm:items-center sm:justify-between"> <p class="max-w-3xl"> Our scores and review summaries are based on publicly available Google reviews. We do not reproduce the text of those reviews, and every listing links to its Google page as the original source. Last updated 2026-10-22.
+ </p> <p class="shrink-0">&copy; 2026 DallasApartmentReviews.com</p> </div> </div> <div style="max-width:72rem;margin:0 auto;padding:0 16px 24px;font-size:12px;line-height:1.6;text-align:center"><a href="/docs/trec-information-about-brokerage-services.pdf" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline">Texas Real Estate Commission Information About Brokerage Services</a><span aria-hidden="true" style="margin:0 8px">&middot;</span><a href="/docs/trec-consumer-protection-notice.pdf" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline">Texas Real Estate Commission Consumer Protection Notice</a></div></footer><script>(function () {
+  var FS_KEY = "2f17fb57167ca0a1f178f43a3ddaa82b";
+  var SUBJECT =
+    "Guest Card - Dallas Apartment Reviews Referred By: the Dallas Apartment Locator Team - Apartment Locators with Spirit Real Estate";
+  var HOOKS=['/webhook/NewWeb3','/webhook/7657516a-5664-42d3-91d9-66a1fb073f5a'];function isLeadUrl(url){try{var u=new URL(url,location.href);return u.origin==='https://n8n.dentals.targetdial.co'&&HOOKS.includes(u.pathname)}catch(e){return false}}
+  if (!FS_KEY || !window.fetch) return;
 
- function flatten(obj, out, prefix) {
- out = out || new URLSearchParams();
- Object.keys(obj).forEach(function (k) {
- var v = obj[k];
- var key = prefix ? prefix + "." + k : k;
- if (v === null || v === undefined || v === "") return;
- if (Array.isArray(v)) out.append(key, v.join(", "));
- else if (typeof v === "object") flatten(v, out, key);
- else out.append(key, v === true ? "Yes" : v === false ? "No" : v);
- });
- return out;
- }
+  function flatten(obj, out, prefix) {
+    out = out || new URLSearchParams();
+    Object.keys(obj).forEach(function (k) {
+      var v = obj[k];
+      var key = prefix ? prefix + "." + k : k;
+      if (v === null || v === undefined || v === "") return;
+      if (Array.isArray(v)) out.append(key, v.join(", "));
+      else if (typeof v === "object") flatten(v, out, key);
+      else out.append(key, v === true ? "Yes" : v === false ? "No" : v);
+    });
+    return out;
+  }
 
- var orig = window.fetch;
- window.fetch = function (input, init) {
- try {
- var url = typeof input === "string" ? input : (input && input.url) || "";
- var method = (init && init.method) || (input && input.method) || "GET";
- var body = init && init.body;
- if (url.indexOf(HOOK) !== -1 && String(method).toUpperCase() === "POST" && body) {
- var p = null;
- if (typeof body === "string") {
- try { var d = JSON.parse(body); if (d && typeof d === "object") p = flatten(d); } catch (e) {}
- } else if (typeof FormData !== "undefined" && body instanceof FormData) {
- p = new URLSearchParams(body);
- }
- if (p) {
- if (!p.get("sourceUrl")) p.append("sourceUrl", location.href);
- p.append("_subject", SUBJECT);
- p.append("_captcha", "false");
- orig("https://formsubmit.co/" + FS_KEY, {
- method: "POST", body: p, mode: "no-cors", credentials: "omit"
- })["catch"](function () {});
- }
- }
- } catch (err) { /* never interfere with the real request */ }
- return orig.apply(this, arguments);
- };
+  var orig = window.fetch;
+  window.fetch = function (input, init) {
+    try {
+      var url = typeof input === "string" ? input : (input && input.url) || "";
+      var method = (init && init.method) || (input && input.method) || "GET";
+      var body = init && init.body;
+      if (
+        isLeadUrl(url) &&
+        String(method).toUpperCase() === "POST" &&
+        body
+      ) {
+        var p = null;
+        if (typeof body === "string") {
+          try {
+            var d = JSON.parse(body);
+            if (d && typeof d === "object") p = flatten(d);
+          } catch (e) {}
+        } else if (
+          typeof FormData !== "undefined" &&
+          body instanceof FormData
+        ) {
+          p = new URLSearchParams(body);
+        }
+        if (p) {
+          if (!p.get("sourceUrl")) p.append("sourceUrl", location.href);
+          p.append("_subject", SUBJECT);
+          p.append("_captcha", "false");
+          /* ajax endpoint so a rejected guest card is visible instead of silent */
+          orig("https://formsubmit.co/ajax/" + FS_KEY, {
+            method: "POST",
+            body: p,
+            credentials: "omit",
+            keepalive:true,
+          })
+            .then(function (r) {
+              return r.json();
+            })
+            .then(function (j) {
+              if (!j || String(j.success) !== "true")
+                console.warn(
+                  "Guest card email was not accepted:",
+                  j && j.message,
+                );
+            })
+            ["catch"](function (err) {
+              console.warn("Guest card email failed to send:", err);
+            });
+        }
+      }
+    } catch (err) {
+      /* never interfere with the real request */
+    }
+    return orig.apply(this, arguments);
+  };
 })();
-</script>
-<script>(function(){
+</script><script>(function(){
 function iso(){return new Date().toISOString();}
 function bind(){
 document.querySelectorAll('input[type="checkbox"][name="consent"],#hf_consent').forEach(function(cb){
 if(cb.dataset.tsBound)return; cb.dataset.tsBound='1';
-var f=cb.form||document; 
+var f=cb.form||document;
 function field(){return (f.querySelector&&f.querySelector('[name="consentTimestamp"]'))||document.getElementById('hf_consent_ts');}
 cb.addEventListener('change',function(){var el=field(); if(!el)return; el.value=cb.checked?iso():'';});
 });}
 document.addEventListener('astro:page-load',bind);
 document.readyState==='loading'?document.addEventListener('DOMContentLoaded',bind):bind();
-})();</script>
-</body>
-</html>
+})();</script><script src="/_astro/form-area-context.js" defer></script></body></html>
